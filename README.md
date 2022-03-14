@@ -46,8 +46,12 @@ YOU set the limits:
 ## Deadlines
 
 We want to see a pull request three hours after the challenge has started. The basic goals described in the first part of this challenge (The Challenge)
+
 Once the PR has been sent you will have one week to complete the bonuses and turn it into your dream project.
+
 In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
+
 Pull requests will not be accepted in day 7 if a PR was not sent in after the first three hours. The challenges complement each other but they are evaluated separately.
+
 To start with the challenge make a fork of the repo and to submit it don't forget to pull request it. Write a good Readme.MD, if you don't attach the instructions to run the repo your candidacy will be invalidated.
  
