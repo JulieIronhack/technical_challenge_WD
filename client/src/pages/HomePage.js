@@ -38,7 +38,6 @@ function HomePage() {
                 <div className="screen">{element.screen}</div>
                 <div className="processor">{element.processor}</div>
                 <div className="ram">{element.ram}</div>
-
                 <hr/>
             </>
           )
