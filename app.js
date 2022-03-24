@@ -10,7 +10,12 @@ var telephonesRouter = require("./routes/telephones");
 
 var app = express();
 
-app.use(cors({ origin: "http://localhost3001" }));
+app.use(
+  cors({
+    credentials: true,
+    origin: "http://localhost3001",
+  })
+);
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
