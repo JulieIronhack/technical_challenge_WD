@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 function HomePage() {
 
   const [selectedPhones, setSelectedPhones] = useState([]);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     axios
@@ -14,14 +15,29 @@ function HomePage() {
       .then((result) => {
         console.log(result.data);
         setSelectedPhones(result.data);
+        setLoading(false);
       })
       .catch( (ex) => {
         console.log(ex)
       });
   }, []);
 
+  useEffect(() => {
+    axios
+      .get('http://localhost:5005/telephones')
+      .then((result) => {
+        console.log(result.data);
+        setSelectedPhones(result.data);
+        setLoading(false);
+      })
+      .catch( (ex) => {
+        console.log(ex)
+      });
+  }, [loading]);
+
   return (
     <>
+
     <div className="list-group">
       {
         selectedPhones.map( (element, index) => {

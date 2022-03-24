@@ -1,4 +1,4 @@
-import "../App.css";
+import "./PhoneDetails.css";
 import React from 'react';
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -39,6 +39,7 @@ function PhoneDetails(prop) {
         <div className="screen">{selectedPhone.screen}</div>
         <div className="processor">{selectedPhone.processor}</div>
         <div className="ram">{selectedPhone.ram}</div>
+        <a href="javascript:history.back()">go back</a>
       </div>
     </>
   );
