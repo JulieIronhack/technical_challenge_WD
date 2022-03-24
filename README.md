@@ -1,6 +1,6 @@
 # running client
 
-type npm start
+npm start
 
 # running server
 
