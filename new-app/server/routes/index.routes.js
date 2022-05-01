@@ -18,7 +18,6 @@ router.get("/telephones/:id", async (req, res, next) => {
     const { id } = req.params;
     const data = await Phone.findById(id);
     res.json(data);
-    console.log("Phone Details: ", data);
   } catch (error) {
     res.status(400).json({
       errorMessage: "Error fetching phone details from server" + error.message,

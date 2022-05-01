@@ -17,11 +17,14 @@ export function PhoneDetail() {
         setData(data);
       }
       fetchPhone();
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   }, [params]);
   console.log("Let see data:", data);
   return (
     <div>
+      <img width="50%" src={data.img} alt={data.name} />
       <h2>Phone Detail</h2>
       <h3>Name:</h3>
       <p>{data.name}</p>

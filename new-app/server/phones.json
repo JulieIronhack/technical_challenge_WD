@@ -1,6 +1,6 @@
 [
   {
-      "id": 0,
+      "img": "https://www.backmarket.pt/cdn-cgi/image/format=auto,quality=75,width=3840/https://d1eh9yux7w8iql.cloudfront.net/product_images/16746_2903e065-694b-450d-96a8-785f14acbd4a.jpg",
       "name": "iPhone 7",
       "manufacturer": "Apple",
       "description": "iPhone 7 dramatically improves the most important aspects of the iPhone experience. It introduces advanced new camera systems. The best performance and battery life ever in an iPhone. Immersive stereo speakers. The brightest, most colorful iPhone display. Splash and water resistance*. And it looks every bit as powerful as it is. This is iPhone 7.",
@@ -12,7 +12,7 @@
       "ram": 2
   },
   {
-      "id": 1,
+      "img": "https://www.backmarket.pt/cdn-cgi/image/format=auto,quality=75,width=828/https://d1eh9yux7w8iql.cloudfront.net/product_images/87225_d9f9a8f9-a3c1-471c-ae0d-1cd349bf515a.jpg",
       "name": "Galaxy S7",
       "manufacturer": "Samsung",
       "description": "Introducing the smartphone your life can not do without, The Samsung Galaxy S7. Packed with features to keep you both productive and entertained, all in a sleek, slim design that fits comfortably in your hand or pocket.",
@@ -24,7 +24,7 @@
       "ram": 4
   },
   {
-      "id": 2,
+      "img": "https://www.backmarket.pt/cdn-cgi/image/format=auto,quality=75,width=828/https://d1eh9yux7w8iql.cloudfront.net/product_images/127400_a3a65263-1b3d-4263-b755-544504f1afe5.jpg",
       "name": "Honor 10",
       "manufacturer": "Huawei",
       "description": "Great phone with an excellent interface. One of the best mid price range phones in the market.",
@@ -36,7 +36,7 @@
       "ram": 6
   },
   {
-      "id": 3,
+      "img": "https://www.backmarket.pt/cdn-cgi/image/format=auto,quality=75,width=3840/https://d1eh9yux7w8iql.cloudfront.net/product_images/38915_b587427b-c0e2-4711-a766-d2cf79cd138d.jpg",
       "name": "P10 Lite",
       "manufacturer": "Huawei",
       "description": "Great phone with an excellent interface. One of the best mid price range phones in the market.",
@@ -48,7 +48,7 @@
       "ram": 4
   },
   {
-      "id": 4,
+      "img": "https://www.backmarket.pt/cdn-cgi/image/format=auto,quality=75,width=828/https://d1eh9yux7w8iql.cloudfront.net/product_images/1554099521.95.jpg",
       "name": "Nokia 7.1",
       "manufacturer": "Nokia",
       "description": "Great phone with an excellent interface. One of the best mid price range phones in the market.",
@@ -60,7 +60,7 @@
       "ram": 4
   },
   {
-      "id": 5,
+      "img": "https://t.ctcdn.com.br/PNKYRa2HPXCEP9Qt_yc0t8mDk_c=/fit-in/400x400/filters:format(webp):fill(transparent):watermark(wm/prd.png,-32p,center,1,none,15)/i410326.png",
       "name": "Zen Phone 5",
       "manufacturer": "Asus",
       "description": "Great phone with an excellent interface. One of the best mid price range phones in the market.",
@@ -72,7 +72,7 @@
       "ram": 6
   },
   {
-      "id": 6,
+      "img": "https://www.backmarket.pt/cdn-cgi/image/format=auto,quality=75,width=828/https://d1eh9yux7w8iql.cloudfront.net/product_images/381632_d7ae5c01-c7f5-4b29-afc9-adc58de2113d.jpg",
       "name": "MI A2",
       "manufacturer": "Xiaomi",
       "description": "Great phone with an excellent interface. One of the best mid price range phones in the market.",
@@ -84,7 +84,7 @@
       "ram": 6
   },
   {
-      "id": 7,
+      "img": "https://www.backmarket.pt/cdn-cgi/image/format=auto,quality=75,width=3840/https://d1eh9yux7w8iql.cloudfront.net/product_images/None_ad6af0d6-12be-499d-a3f0-aab89c3a2edc.jpg",
       "name": "Moto G6",
       "manufacturer": "Motorola",
       "description": "Great phone with an excellent interface. One of the best mid price range phones in the market.",

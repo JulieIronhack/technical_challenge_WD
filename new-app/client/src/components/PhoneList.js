@@ -15,7 +15,9 @@ export function PhoneList() {
         const { data } = await axios.get(API_BASE_URL + "/telephones");
         setData(data);
         console.log(data);
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     }
     fetchPhones();
   }, []);
@@ -32,7 +34,7 @@ export function PhoneList() {
           <h2>List</h2>
           {data.map((elem) => {
             return (
-              <div key={elem.id}>
+              <div key={elem._id}>
                 <Link to={"/telephones/" + elem._id}>
                   <h3>{elem.name}</h3>
                 </Link>
