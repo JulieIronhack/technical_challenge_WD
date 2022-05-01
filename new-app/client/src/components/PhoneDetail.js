@@ -23,21 +23,21 @@ export function PhoneDetail() {
   return (
     <div>
       <h2>Phone Detail</h2>
-      <h5>Name:</h5>
+      <h3>Name:</h3>
       <p>{data.name}</p>
-      <h5>Manufacturer:</h5>
+      <h3>Manufacturer:</h3>
       <p>{data.manufacturer}</p>
-      <h5>Description:</h5>
+      <h3>Description:</h3>
       <p>{data.description}</p>
-      <h5>Color:</h5>
+      <h3>Color:</h3>
       <p>{data.color}</p>
-      <h5>Price:</h5>
-      <p>{data.price}</p>
-      <h5>Screen:</h5>
+      <h3>Price:</h3>
+      <p>${data.price}</p>
+      <h3>Screen:</h3>
       <p>{data.screen}</p>
-      <h5>Processor:</h5>
+      <h3>Processor:</h3>
       <p>{data.processor}</p>
-      <h5>Ram:</h5>
+      <h3>Ram:</h3>
       <p>{data.ram}</p>
     </div>
   );
