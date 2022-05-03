@@ -2,11 +2,11 @@
 
   At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
 
-## The challenge (first 3 hours)
+## The challenge (Duration: 3 hours)
 
 Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
 
-### First iteration
+### Iteration #1
 
 Create a REST API (NodeJS) server that meets the following requirements:
 
@@ -17,7 +17,7 @@ Create a REST API (NodeJS) server that meets the following requirements:
 | `/phones/:id`         | GET       | Show a phone details|
 
 
-### Second iteration
+### Iteration #2
 
 Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
 - Use Axios (or a similar library) in order to obtain data from the REST API
@@ -25,14 +25,14 @@ Create a React application that communicates with the API you created before. Yo
 - When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
 - Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
 
-### Third Iteration
+### Iteration #3
 
 Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
 
 Once done with this, do a pull request to submit your work. 
 
 
-## Deadlines
+## Deadline
 
 You have three hours to work on this challenge.
 In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
