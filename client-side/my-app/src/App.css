@@ -1,0 +1,62 @@
+.loader-container {
+  position: absolute;
+  left: calc(50% - 1em);
+  top: 30%;
+}
+
+.phone-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.img-container img {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+}
+
+.phone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(182, 182, 182);
+}
+
+.phone-text {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+.man {
+  font-style: italic;
+  color: rgb(146, 146, 146);
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 1.2em;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+button {
+  width: 90px;
+  position: absolute;
+  bottom: 10px;
+  background-color: rgb(57, 133, 177);
+  color: white;
+}
