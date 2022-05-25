@@ -1,0 +1,8 @@
+.PhoneCard {
+    margin-bottom: 30px;
+}
+
+.PhoneCard img {
+    height: 100px;
+    object-fit: cover;
+}
