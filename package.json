@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "technical_challenge_wd",
+  "description": "At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukecin/technical_challenge_WD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukecin/technical_challenge_WD/issues"
+  },
+  "homepage": "https://github.com/lukecin/technical_challenge_WD#readme"
+}
