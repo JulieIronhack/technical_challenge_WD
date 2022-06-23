@@ -6,7 +6,7 @@ import NavbarTop from './components/NavbarTop';
 
 //Pages
 import Home from './pages/Home'
-import PhonesList from './pages/phones/PhonesList';
+import PhonesList from './components/PhonesList';
 
 //Errors
 import Error from './pages/Error';
@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <NavbarTop />
+      <PhonesList />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/phones" element={<PhonesList />} />

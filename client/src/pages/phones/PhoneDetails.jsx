@@ -8,12 +8,13 @@ function PhoneDetails() {
   const navigate = useNavigate();
   const { id } = useParams();
   const [phoneDetails, setPhoneDetails] = useState("");
-
+  
   useEffect(() => {
     getPhoneDetails();
-  }, []);
+  }, [id]);
 
   const getPhoneDetails = async () => {
+    setPhoneDetails(null)
     try {
       const phoneDetails = await axios.get(
         `http://localhost:5005/api/phones/${id}` //Call axios for get details by id
