@@ -37,7 +37,7 @@ export default function PhoneDetailsComp(props) {
             }
             {
                 showDetails === true && phoneInfo !== null &&
-                <div className="phone flex flex-col flex-wrap justify-center items-center align-items-center h-full w-full">
+                <div className="phone flex flex-col flex-wrap justify-center items-start align-items-center h-full w-full">
                     <p className="phoneTitle"><span className="font-bold">Phone name:</span> {phoneInfo.name}</p>
                     <p className="manufacturer"><span className="font-bold">Manufacturer:</span> {phoneInfo.manufacturer}</p>
                     <p className="description"><span className="font-bold">Description:</span> {phoneInfo.description}</p>

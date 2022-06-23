@@ -31,7 +31,7 @@ function Phones() {
                 <img src={elem.imageFileName} alt={elem.name} srcSet="" width={500} className="text-right rounded-3xl" />
                 <p className="phoneTitle"><span className="font-bold"> {elem.name}</span></p>
               </div>
-              <div className='w-5/12 bg-gray-900 p-7 rounded-2xl text-white text-sm lg:text-xl md:text-md mb-1 mt-1'>
+              <div className='w-5/12 bg-gray-900 p-7 rounded-2xl text-white text-[8px] lg:text-xl md:text-sm mb-1 mt-1'>
                 <PhoneDetailsComp id={elem.id} />
               </div>
             </div>
