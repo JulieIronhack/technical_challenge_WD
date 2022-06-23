@@ -7,15 +7,15 @@ Just navigate to the homepage, look at the phones and click on "See Details" to 
 
 ## Homepage
 
-![Homepageimg](url "/1.png")
+![Homepageimg](/1.png "homepage image")
 
 ## Loading details
 
-![Homepageimg](url "/2.png")
+![Homepageimg](/2.png "loading details")
 
 ## Details loaded
 
-![Homepageimg](url "/3.png")
+![Homepageimg](/3.png "details loaded")
 
 ## Fully responsive
 
