@@ -6,7 +6,7 @@ export default function PhoneDetailsComp(props) {
     const [phoneInfo, setPhoneInfo] = useState(null);
     const [showDetails, setShowDetails] = useState(false);
 
-    const { id } = props
+    const { id } = props;
 
     const getPhoneInfo = async () => {
         try {
@@ -18,12 +18,10 @@ export default function PhoneDetailsComp(props) {
         }
     }
 
-
     const handleShowDetails = () => {
         setShowDetails(true);
         setTimeout(getPhoneInfo, 2000);
     }
-
 
     return (
         <>
