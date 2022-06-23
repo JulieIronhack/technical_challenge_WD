@@ -19,4 +19,4 @@ Just navigate to the homepage, look at the phones and click on "See Details" to 
 
 ## Fully responsive
 
-![Homepageimg](url "/4.png")
+![Homepageimg](/4.png "responsive")
