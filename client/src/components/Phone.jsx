@@ -33,7 +33,7 @@ function Phone({ id }) {
   return (
 
 <div className="card text-left">
-  <img src={phone.imageFileName} class="card-img-top" alt={phone.name}/>
+  <img src={`${process.env.REACT_APP_SERVER_URL+'/images/'+phone.imageFileName}`} class="card-img-top img-fluid mx-auto d-block" alt={phone.name} style={{width:300}}/>
   <div className="card-body">
     <h5 className="card-title">{phone.name}</h5>
     <p className="card-text">{phone.description}</p>
