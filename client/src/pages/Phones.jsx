@@ -2,10 +2,9 @@ import "../App.css";
 import axios from "axios"
 import PulseLoader from "react-spinners/PulseLoader";
 import React, { useEffect, useState } from "react";
-import { NavLink, Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import PhonesDetails from "../components/PhonesDetails";
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -48,7 +47,7 @@ function Phones() {
   return (
     <div className="App">
       <br/>
-      <h1>Phones</h1>
+      <h1>PhonesData</h1>
       <br />
 
       {
@@ -60,6 +59,7 @@ function Phones() {
                   <Card.Body>
                     <div key={eachPhone.id} className="container-phones">
                       <div className="phone-name"><h3>{eachPhone.name}</h3></div>
+                        <hr/>
                         <PhonesDetails id={eachPhone.id}/>
                     </div>
                   </Card.Body>
