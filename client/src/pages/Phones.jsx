@@ -56,7 +56,7 @@ function Phones() {
           return (
             <Container className="flexcontainer">
               <Row className="justify-content-md-center">
-                <Card style={{ width: '23rem' }}>
+                <Card style={{ width: '30rem' }}>
                   <Card.Body>
                     <div key={eachPhone.id} className="container-phones">
                       <div className="phone-name"><h3>{eachPhone.name}</h3></div>
