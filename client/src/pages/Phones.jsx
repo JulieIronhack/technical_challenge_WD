@@ -4,6 +4,11 @@ import PulseLoader from "react-spinners/PulseLoader";
 import React, { useEffect, useState } from "react";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import PhonesDetails from "../components/PhonesDetails";
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 
 function Phones() {
 
@@ -34,32 +39,35 @@ function Phones() {
     return (
       <div>
         <br />
-        <h4>Loading phones...</h4>
+        <h6>Loading phones...</h6>
         <PulseLoader />
       </div>
     )
   }
-  
 
   return (
     <div className="App">
+      <br/>
       <h1>Phones</h1>
       <br />
 
       {
         allPhones.map((eachPhone) => {
           return (
-            <div key={eachPhone.id}>
-              <hr />
-              <div className="phone-image"><img src={eachPhone.imageFileName} width={320} alt="Phone"/></div>
-              <div className="phone-name"><h3>{eachPhone.name}</h3></div>
-              <div className="phone-manufacturer"><p><strong>Manufacturer:</strong> {eachPhone.manufacturer}</p></div>
-              <PhonesDetails id={eachPhone.id}/>
-              <br />
-              <hr />
-              
-              <br />
-            </div>
+            <Container className="flexcontainer">
+              <Row className="justify-content-md-center">
+                <Card style={{ width: '23rem' }}>
+                  <Card.Body>
+                    <div key={eachPhone.id} className="container-phones">
+                      <div className="phone-name"><h3>{eachPhone.name}</h3></div>
+                        <PhonesDetails id={eachPhone.id}/>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Row>
+              <br/>
+            </Container>
+            
           )
         })
       }

@@ -1,9 +1,10 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom";
-import routes from "./config/routes";
 import Phones from "./pages/Phones";
 import Error from "./pages/error/Error.jsx";
 import NotFound from "./pages/error/NotFound.jsx";
+// import routes from "./config/routes";
 
 function App() {
   return (
