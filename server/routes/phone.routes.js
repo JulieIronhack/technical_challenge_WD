@@ -6,7 +6,7 @@ const Phone = require("../models/Phone.model")
 
 router.get("/", async (req, res) => {
     try {
-        const phones = await Phone.find();
+        const phones = await Phone.find({}, { __v: 0 });
         res.status(200).json(phones);
     } catch (error) {res.status(500).json({ message: "Error while trying to get all phones!", error: error.message })};
 });
