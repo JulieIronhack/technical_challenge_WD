@@ -12,15 +12,21 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/:_id", async (req, res) => {
+    const throwError = (message, status) => {
+        const error = new Error(message);
+        error.status = status;
+        throw error;
+    };
+
     try {
         const { _id } = req.params;
         if (!(_id.length === 24) || !/^[a-z0-9]+$/.test(_id)) {
-            const error = new Error("Provided _id for the phone is invalid!");
-            error.status = 400;
-            throw error;
+            throwError("Provided _id for the phone is invalid!", 400)
         };
 
         const phone = await Phone.findOne({ _id }, { __v: 0 });
+        if (!phone) throwError("Provided _id does not match any _id in our database", 404);
+
         res.status(200).json(phone);
     } catch (error) {
         if (!error.status) error.status = 500;
