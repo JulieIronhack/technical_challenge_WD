@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+  margin: 2em;
+}
+
+.columns {
+  display: flex;
+}
+
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #9c9c9c;
+}
