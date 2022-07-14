@@ -8,7 +8,6 @@ const AllPhones = () => {
 
     const fetchPhones = async () => {
         const data = await axios.get('http://localhost:5005/api/phones')
-        console.log(data)
         setPhones(data)
         setIsLoading(false)
     }
@@ -19,8 +18,8 @@ const AllPhones = () => {
 
     return <>
         {isLoading && <p>Loading...</p>}
-        {!isLoading && <><p>List of all Phones</p>
-        {phones.data.map(el => <div>
+        {!isLoading && <><h1 align='center'>List of all Phones</h1>
+        {phones.data.map(el => <div align='center'>
             <p>{el.name}</p> 
             <Link to={`/phones/${el.id}`}>Details</Link>
             </div>
