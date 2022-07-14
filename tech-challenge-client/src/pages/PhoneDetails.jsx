@@ -22,7 +22,7 @@ const PhoneDetails = () => {
         {!isLoading && <><h2 align='center'>Phone Details</h2>
         <div align='center'>
             <h1>{singlePhone.name}</h1>
-            <img src={require(`../assets/images/${singlePhone.data[0].imageFileName}`)} alt={singlePhone.data[0].name} style={{width: 100}}/>
+            <img src={require(`../assets/images/${singlePhone.data[0].imageFileName}`)} alt={singlePhone.data[0].name} style={{width: 200}}/>
             <p>Manufacturer: {singlePhone.data[0].manufacturer}</p>
             <p style={{width: 400}}>Description: {singlePhone.data[0].description}</p>
             <p>Color: {singlePhone.data[0].color}</p>
