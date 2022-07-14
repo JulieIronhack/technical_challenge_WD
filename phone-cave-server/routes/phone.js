@@ -1,12 +1,8 @@
 const express = require('express');
-const data = require('../data/phones.json');
+const data = require('../../data/phones.json');
 const router = new express.Router();
-const fetch = require('node-fetch');
-let setting = { method: 'GET' };
-const fs = require('fs');
 
-router.get('/', (req, res, next) => {
-  fetch(data, setting).then((res) => res.json()).then;
+router.get('/phones', (req, res, next) => {
   res.json({ data });
   console.log(data);
 });
