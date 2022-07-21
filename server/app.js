@@ -42,7 +42,7 @@ app.use(
   })
 );
 
-app.use('/', baseRouter);
+app.use('/phones', baseRouter);
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => {

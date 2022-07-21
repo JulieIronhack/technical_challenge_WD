@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
-import HomePage from './pages/HomePage';
+import HomePage from './HomePage';
 
 const App = () => {
   return (
