@@ -1,0 +1,52 @@
+body {
+  background-color: ivory;
+}
+
+.pageTop{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.phoneList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align:center;
+}
+
+.phoneList h1{
+  width: 40%;
+  margin: 1% 30%;
+  background-color: rgba(96, 94, 94, 0.449);
+  border-radius: 10px;
+}
+
+.phoneDeets {
+ display: flex; 
+ justify-content: space-between;
+ margin:2% 10%;
+ width:80%;
+
+}
+
+.phoneDeets p, h2{
+  margin:0 2%;
+}
+
+.one {
+  margin:2%;
+}
+
+.onePhone{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+margin:2% 0;
+}
+
+.onePhone button{
+ width:250px;
+ align-self:center;
+}
+
