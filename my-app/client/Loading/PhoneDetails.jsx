@@ -59,7 +59,7 @@
                 <div className="phone-description"><p><strong>Description:</strong> {phonesDetails.description}</p></div>
                 <div className="phone-price"><p><strong>Price:</strong> {phonesDetails.price} €</p></div>
             </>
-        }
+         }
 
         </div>
     )
