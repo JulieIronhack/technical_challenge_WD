@@ -44,9 +44,33 @@ function PhoneDetails() {
                   </td>
                 </tr>
                 <tr>
-                  <td>color:</td>
+                  <td>Color:</td>
                   <td>
                     {color}
+                  </td>
+                </tr>
+                <tr>
+                  <td>Price:</td>
+                  <td>
+                    ${price}
+                  </td>
+                </tr>
+                <tr>
+                  <td>Screen:</td>
+                  <td>
+                    {screen}
+                  </td>
+                </tr>
+                <tr>
+                  <td>Processor:</td>
+                  <td>
+                    {processor}
+                  </td>
+                </tr>
+                <tr>
+                  <td>RAM:</td>
+                  <td>
+                    {ram}
                   </td>
                 </tr>
 

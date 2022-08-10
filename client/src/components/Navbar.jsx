@@ -5,7 +5,7 @@ function Navbar() {
     <div>
         <nav className="navbar navbar-light bg-primary">
             <div className="container">
-                <p className="navbar-brand">Phones</p>
+                <p className="navbar-brand">Phone Catalog</p>
             </div>
         </nav>
     </div>

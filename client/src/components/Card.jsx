@@ -9,8 +9,7 @@ function Card(props) {
 
     <Link to={`/${id}`} style={{textDecoration: "none"}}>
         <div className="list-group-item list-group-item-action list-group">
-            <img src={``} alt=""/>
-            <p style={{alignSelf: "center"}}>{name} {id}</p>
+            <p style={{alignSelf: "center"}}>{name}</p>
         </div>
     </Link>
 
