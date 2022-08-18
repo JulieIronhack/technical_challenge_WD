@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+
+.PhoneList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.PhoneLink {
+  color: #f0f0f0;
+  background: #375fa5;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.Brand {
+  font-weight: 600;
+}
+
+.PhoneDetails {
+  padding: 50px;
+}
+
+.PhoneDetails img { 
+  height: 30vw;
+  object-fit: cover;
+  text-align: left;
+}
