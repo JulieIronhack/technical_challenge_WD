@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import LoadingComponent from "../components/Loading"
+import { Link } from 'react-router-dom';
 const API_URL = process.env.REACT_APP_API_URL
 
 const Phones = () => {
@@ -25,7 +26,9 @@ const Phones = () => {
             {
                 phones.map((phone) => {
                     return (
+                        <Link to={`/phones/${phone._id}`}>
                         <p>{phone.name}</p>
+                        </Link>
                     )
                 })
             }
