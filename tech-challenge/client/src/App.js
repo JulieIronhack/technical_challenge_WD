@@ -1,16 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import routes from "./config/routes";
+import HomePage from "./pages/HomePage";
+import AllPhones from "./pages/AllPhones";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Routes>
-        {routes({}).map((route) => (
-          <Route key={route.path} path={route.path} element={route.element} />
-        ))}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/phones" element={<AllPhones />} />
       </Routes>
-    </div>
+    </>
   );
 }
 
