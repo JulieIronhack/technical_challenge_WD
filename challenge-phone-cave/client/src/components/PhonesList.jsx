@@ -4,13 +4,16 @@ import { Link } from "react-router-dom";
 const PhonesList = (props) => {
   const { phones } = props;
   return (
-    <div className="col-5" style={{ maxHeight: "90vh", overflow: "scroll" }}>
+    <div
+      className="col-12 col-md-5"
+      style={{ maxHeight: "90vh", overflow: "scroll" }}
+    >
       <div className="list-group">
         {phones?.map((phone) => {
           return (
             <Link
               key={phone.id}
-              className="list-gruop-item list-gorup-items-action"
+              className="list-group-item list-group-items-action"
               to={`/phones/${phone.id}`}
             >
               <img
