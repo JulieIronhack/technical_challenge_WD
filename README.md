@@ -1,44 +1,51 @@
 # The Phone Cave (WD)
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+The Phone Cave is a single page aplication developed with ReactJS
 
-## The challenge (Duration: 3 hours)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/101021656/195695959-8571a470-bb00-4264-8878-7e7a3dbba0f1.png" width=50% height=50%>
+</p>
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+## Installation
 
-### Iteration #1
+Its necesary to install all the dependencies using npm package manager for both folders: client and server.
 
-Create a REST API (NodeJS) server that meets the following requirements:
+```bash
+npm install
+```
+
+After installing the dependencies you have to run both in your localhost
+
+### Server
+http://localhost:5005
+```bash
+npm run dev
+```
+
+### Client
+http://localhost:3000
+```bash
+npm start
+```
+
+### End points
+
+| Route                             | HTTP Verb | Description    |
+| --------------------------------- | --------- | -------------- |
+| `http://localhost:5005/phones`    | GET       | Show all phones |
+| `http://localhost:5005/phones/:id`| GET       | Show a phone details|
 
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
+## How does it Works
 
+In the React App page you only need to click a phone and after that it will show the details about the phone 
 
-### Iteration #2
+## Aditional Info
 
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
+Used bootstrap for styles
 
-### Iteration #3
+## Developer
 
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
-
-Once done with this, do a pull request to submit your work. 
-
-
-## Deadline
-
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
-
-## Must-have Deliverables
-
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
+- Jose Bernabe Rios Nuñez
+- You can find me in [Linkedin](https://www.linkedin.com/in/jos017/) or contact me by email: jrbernabe@gmail.com
  
