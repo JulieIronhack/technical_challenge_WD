@@ -1,12 +1,13 @@
 const router = require("express").Router();
 const mongoose = require('mongoose');
+const phoneData = require("../data/phones.json")
 
 const Phone = require('../models/Phone.model');
 
 // GET /api/phones - Show all phones
 router.get('/phones', (req, res) => {
     Phone.find()
-        .then(phones = res.json(phones))
+        .then(phones => res.json(phones))
         .catch(err => console.log(err))
 })
 
