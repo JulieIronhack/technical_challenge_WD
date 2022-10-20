@@ -18,7 +18,6 @@ export default function PhoneDetails() {
     })
     .then(response =>
       {
-        console.log(response)
         setPhoneImg(Buffer.from(response.data, 'binary').toString('base64'))
       })
       
