@@ -1,6 +1,7 @@
 import './PhoneList.css'
 import axios from 'axios'
 import {useState,useEffect} from 'react'
+import {Link} from 'react-router-dom'
 
 export default function PhoneList() {
   const [phonesList, setPhonesList] = useState([])
@@ -21,6 +22,7 @@ export default function PhoneList() {
           <div key={phone.id} className="phone-card">
             <p>{phone.name}</p>
             <p>{phone.price}</p>
+            <Link to={`${phone.id}`}>Details</Link>
           </div>
         )
       })}
