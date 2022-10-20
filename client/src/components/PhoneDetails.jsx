@@ -13,19 +13,22 @@ export default function PhoneDetails() {
     .then(phone => setPhoneDetails(phone.data))
     .catch(err => console.log(err))
 
-    axios.get('http://localhost:5005/phones/'+id+ '/image', {
-      responseType:"arraybuffer"
-    })
-    .then(response =>
-      {
-        setPhoneImg(Buffer.from(response.data, 'binary').toString('base64'))
-      })
-      
-    .catch(err => console.log(err))
-
+    async function fetchPhone() {
+      try {
+        const imageResponse = await axios.get('http://localhost:5005/phones/'+id+'/image', {
+          responseType:'arraybuffer'
+        })
+        const phoneResponse = await axios.get('http://localhost:5005/phones/'+id)
+        setPhoneDetails(phoneResponse.data)
+        setPhoneImg(Buffer.from(imageResponse.data, 'binary').toString('base64'))
+      } catch (error) {
+      }
+    }
+    fetchPhone()
   }, [id])
   
   if (phoneDetails === null) return <Spinner />
+  if (phoneImg === null) return <Spinner />
 
   return(
     <div className="phone-details">
