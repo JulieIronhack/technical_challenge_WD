@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import {Buffer} from 'buffer'
-
+import Spinner from './Spinner'
 export default function PhoneDetails() {
   const {id} = useParams()
   const [phoneDetails, setPhoneDetails] = useState(null)
@@ -25,7 +25,7 @@ export default function PhoneDetails() {
 
   }, [id])
   
-  if (phoneDetails === null) return 'loading'
+  if (phoneDetails === null) return <Spinner />
 
   return(
     <div className="phone-details">
