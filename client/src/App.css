@@ -1,8 +1,10 @@
+
 .main-app {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding:20px;
+  align-items: center;
 }
 a, a:visited {
   text-decoration: none;
@@ -12,14 +14,19 @@ a, a:visited {
   border-radius: 10px;
   box-shadow: 1px 1px 3px gray;
 }
+a:hover {
+  background-color: rgb(129, 67, 159);
+  color: white;
+  transition: background-color 0.2s;
+}
 
 
 .phone-list {
   display: flex;
   gap:20px;
   padding: 10px;
+  width: 90vw;
   overflow-x:scroll;
-  scrollbar-width: thin;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -40,7 +47,7 @@ a, a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  max-width: 500px;
 }
 .phone-details img {
   max-width: 300px;

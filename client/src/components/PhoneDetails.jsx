@@ -29,10 +29,13 @@ export default function PhoneDetails() {
 
   return(
     <div className="phone-details">
-      <p>{phoneDetails.name}</p>
-      <p>{phoneDetails.manufacturer}</p>
+      <h2>{phoneDetails.name}</h2>
+      <h3>Maker: {phoneDetails.manufacturer}</h3>
       <p>{phoneDetails.description}</p>
-      <p>{phoneDetails.color}</p>
+      <p>Color: {phoneDetails.color}</p>
+      <p>Screen: {phoneDetails.screen}</p>
+      <p>Processor: {phoneDetails.processor}</p>
+      <p>Ram: {phoneDetails.ram} GB</p>
       <img src={`data:image/*;base64,${phoneImg}`} alt="phone" />
     </div>
   )

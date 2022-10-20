@@ -21,7 +21,7 @@ export default function PhoneList() {
         return (
           <div key={phone.id} className="phone-card">
             <p>{phone.name}</p>
-            <p>{phone.price}</p>
+            <p>${phone.price}</p>
             <Link to={`${phone.id}`}>Details</Link>
           </div>
         )
