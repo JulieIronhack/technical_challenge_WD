@@ -18,7 +18,7 @@ const handleClick  = (event) =>{
 console.log(activeId)
 
   return (
-    <div className=" m-0" onClick={handleClick} id={id}>
+    <div onClick={handleClick} id={id} className={`col mb-4 shadow-sm m-5 p-3 rounded-4  ${parseInt(activeId) === id ? "bg-light" : "bg-white dont-grow"}`}>
       <div className="text-decoration-none d-flex">
         <div
           className="col-4 p-2 d-flex flex-column booking-card rounded-5 position-relative p-2  align-self-center"
