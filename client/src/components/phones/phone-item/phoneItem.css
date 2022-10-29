@@ -1,0 +1,10 @@
+.booking-card{
+  min-height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-size: 100%;
+  border-radius: 5px !important;
+}
+

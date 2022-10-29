@@ -11,7 +11,7 @@ module.exports.list = (req, res, next) => {
 
 
   PhoneList.then((restaurant) => res.json(restaurant))
-   .catch((error) => next(error));
+    .catch((error) => next(error));
   }
 
 
