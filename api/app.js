@@ -8,8 +8,10 @@ const createError = require("http-errors");
 const app = express();
 
 app.use((req, res, next) => {
-  res.set("Acces-Control-Allow-Origin", "http://localhost:3000");
-  res.set("Acces-Control-Allow-Methods", "GET");
+  res.set("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.set("Access-Control-Allow-Headers", "content-type");
+  res.set("Access-Control-Allow-Methods", "*");
+  res.set("Access-Control-Allow-Credentials", "true");
   next();
 });
 
