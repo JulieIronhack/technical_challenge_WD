@@ -1,0 +1,35 @@
+nav {
+    background-color: #a0cdbe;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+nav>a {
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+
+nav>a>button {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* 
+---------------------------------------------
+responsive design
+--------------------------------------------- 
+*/
+
+@media (max-width: 200px) {
+    nav {
+        flex-direction: column;
+        height: 75px;
+    }
+
+    nav>a>button {
+        width: 100%;
+    }
+}

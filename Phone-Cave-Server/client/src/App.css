@@ -1,3 +1,28 @@
 .App {
   text-align: center;
 }
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #80a699;
+  /* font-weight: bold; */
+  /* color: #dff7ef; */
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  border: #686666 solid 3px;
+  border-radius: 20px;
+  max-width: 1024px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}

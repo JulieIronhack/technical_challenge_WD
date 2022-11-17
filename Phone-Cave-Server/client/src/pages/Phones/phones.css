@@ -1,0 +1,26 @@
+.phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    ;
+}
+
+.phone-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.phone-btn {
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin: 0;
+}
