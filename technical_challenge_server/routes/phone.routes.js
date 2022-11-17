@@ -7,7 +7,7 @@ router.get("/phones", (req, res, next) => {
 
 router.get("/phones/:phoneId", (req, res, next) => {
   const { phoneId } = req.params;
-  const phone = data.find((phone) => (phone.id = phoneId));
+  const phone = data.find((phone) => phone.id == phoneId);
   res.json(phone);
 });
 
