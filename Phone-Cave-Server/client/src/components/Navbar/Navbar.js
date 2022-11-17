@@ -9,10 +9,6 @@ function Navbar() {
         <button>Home</button>
       </Link>
 
-      {/* <Link to="/about">
-        <button>About</button>
-      </Link>       */}
-
       <Link to="/phones">
         <button>Phones</button>
       </Link>
