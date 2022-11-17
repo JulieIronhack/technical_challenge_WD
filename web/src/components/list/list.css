@@ -1,0 +1,53 @@
+.list-css {
+  margin-top: 200px;
+  display: flex;
+  background-size: cover;
+  overflow: auto;
+  white-space: nowrap;
+
+}
+
+.list-items {
+  display: flex;
+}
+.list-items img {
+  height: 20vw;
+  min-height: 150px;
+  margin-left: 6vw;
+}
+.list-items img:hover {
+  scale: 1.1;
+  transition: ease-in-out all 0.5s;
+}
+
+.title-page{
+  font-size: calc(7px + 1vw);
+  padding: 5px 5px;
+  max-width: 600px;
+  margin-top: 5%;
+  animation: fluido0 9s ease-in-out infinite;
+  background: linear-gradient(-45deg, rgba(237, 122, 241, 0.205), #00e5ff5a, rgba(0, 245, 0, 0.305));
+  background-size: 300%;
+  border-radius: 15px;
+
+width: 80%;
+text-align: center;
+}
+
+@keyframes fluido0 {
+  0% { background-position: 0 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0 50% }
+}
+
+.bulala div{
+  display: block;
+}
+.description{
+  font-size: calc(10px + 0.5vw);
+  text-align: left;
+  padding-left: 15%;
+  max-width: 500px;
+  box-shadow: 0 2px 2px grey;
+  min-height: 200px;
+}
