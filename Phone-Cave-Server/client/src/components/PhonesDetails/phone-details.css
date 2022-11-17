@@ -1,0 +1,79 @@
+.phone-container {
+    border: #686666 solid 3px;
+    border-radius: 20px;
+    max-width: 1024px;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-wrapper {
+    flex-grow: 100;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description {
+    max-width: 400px;
+}
+
+.tech-info {
+    font-style: italic;
+}
+
+img {
+    border-radius: 20px;
+    height: 400px;
+    max-width: 400px;
+}
+
+/* 
+---------------------------------------------
+responsive design
+--------------------------------------------- 
+*/
+@media (max-width: 768px) {
+    .phone-container {
+        max-width: 736;
+    }
+
+    .img-wrapper {
+        max-width: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        height: auto;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .info-wrapper {
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .phone-container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .info-wrapper {
+        padding: 10px;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .img-wrapper {
+        max-width: 1000%;
+    }
+}

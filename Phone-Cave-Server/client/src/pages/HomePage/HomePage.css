@@ -1,0 +1,14 @@
+.hp-container {
+    margin-top: 20px;
+}
+
+.hp-text {
+    max-width: 624px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    gap: 10px;
+}
