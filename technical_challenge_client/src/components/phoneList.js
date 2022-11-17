@@ -1,5 +1,4 @@
-// import { fetchPhones } from "../api/index";
-import { Table, Button } from "antd";
+import { Table, Button, Spin } from "antd";
 
 function PhoneList({ phones, setPhone }) {
   const columns = [
@@ -30,7 +29,8 @@ function PhoneList({ phones, setPhone }) {
         <Button
           type="primary"
           onClick={() => {
-            setPhone(record.id ? record.id : 0);
+            setPhone(record.id ? String(record.id) : "0");
+            window.scrollTo(0, 0);
           }}
         >
           Details
@@ -39,7 +39,9 @@ function PhoneList({ phones, setPhone }) {
     },
   ];
 
-  return <Table dataSource={phones} columns={columns} />;
+  return (
+    <>{phones ? <Table dataSource={phones} columns={columns} /> : <Spin />}</>
+  );
 }
 
 export default PhoneList;

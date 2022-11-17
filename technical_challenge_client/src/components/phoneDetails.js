@@ -1,12 +1,13 @@
-import { Card } from "antd";
+import { Card, Spin } from "antd";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
 function PhoneDetails({ id }) {
+  console.log("id>>>", id);
   const [phoneDetails, setPhoneDetails] = useState(null);
   useEffect(() => {
-    fetchPhone();
-  }, []);
+    if (!isNaN(id)) fetchPhone();
+  }, [id]);
 
   const fetchPhone = () => {
     axios
@@ -41,7 +42,7 @@ function PhoneDetails({ id }) {
           <p>{phoneDetails.price}€</p>
         </Card>
       ) : (
-        <h1>Please select a phone for more details</h1>
+        <Spin />
       )}
     </>
   );

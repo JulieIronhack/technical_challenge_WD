@@ -33,7 +33,7 @@ function App() {
           <PhoneDetails id={phoneId}></PhoneDetails>{" "}
         </>
       ) : (
-        <h1>Please select a phone for more details</h1>
+        <h2>Please select a phone for more details</h2>
       )}
 
       <Divider>Phone List</Divider>
