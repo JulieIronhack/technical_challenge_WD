@@ -19,7 +19,7 @@ const indexRoutes = require("./routes/index.routes");
 app.use("/api", indexRoutes);
 
 const phoneRoutes = require("./routes/phone.routes");
-app.use("phones", phoneRoutes);
+app.use("/phones", phoneRoutes);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

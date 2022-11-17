@@ -8,9 +8,10 @@ router.get("/", (req, res) => {
 
 // Show a phone details
 router.get("/:id", (req, res) => {
-    const {id} = req.params;
+    const id = parseInt(req.params.id);
+
     const phone = phones.find((element) => {
-        element.id === id
+       return element.id === id
     })
     res.json(phone)
 })
