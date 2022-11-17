@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 
 
-function BeerList() {
+function HomePage() {
     return (
         <div>
             <h1>HomePage</h1>
@@ -13,4 +13,4 @@ function BeerList() {
     );
 }
 
-export default BeerList;
+export default HomePage;
