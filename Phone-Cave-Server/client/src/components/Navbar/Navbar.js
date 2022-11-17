@@ -9,9 +9,13 @@ function Navbar() {
         <button>Home</button>
       </Link>
 
-      <Link to="/about">
+      {/* <Link to="/about">
         <button>About</button>
-      </Link>      
+      </Link>       */}
+
+      <Link to="/phones">
+        <button>Phones</button>
+      </Link>
     </nav>
   );
 }
