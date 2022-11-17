@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.img__phone--small {
+  width: 80px;
+}
+
+.img__phone--medium {
+  width: 250px;
+}
+
+.align-center {
+  margin: 0 auto;
+}
+
+.phone-details {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .phone-details {
+    width: 100%;
+  }
+}
