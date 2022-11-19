@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.PhoneDetails {
+  display: flex;
+}
+
+.details {
+  padding: 5% 0;
+  padding-right: 20%;
+  text-align: justify;
+}
+
+.phone img {
+  width: 30vw;
+ }
+
+.menu-item {
+  text-decoration: none;
+  padding: 0 10%;
+  border: 2px solid rgb(113, 164, 25);
+  border-radius: 3px;
+  color: rgb(68, 100, 12)
+}
+
+.PhonesPage img {
+ height: 30vh;
+}
