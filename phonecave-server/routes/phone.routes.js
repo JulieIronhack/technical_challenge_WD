@@ -17,7 +17,7 @@ router.get("/", (req, res, next) => {
 // GET "/api/phones" => get all phones list to show in client react app
 router.get("/:phoneId", (req, res, next) => {
   const { phoneId } = req.params;
-  const details = phoneList.find((eachPhone) => (eachPhone.id = phoneId));
+  const details = phoneList.find((eachPhone) => (eachPhone.id === Number(phoneId)));
 
   if (!details) {
     res
