@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getAllPhonesService } from "../services/phone.services";
 import { Link } from "react-router-dom";
+import Details from "../components/Details";
 
 function Home() {
   // List items state
@@ -22,7 +23,6 @@ function Home() {
     try {
       const phoneList = await getAllPhonesService();
       setList(phoneList.data);
-      console.log(phoneList.data);
       setIsFetching(false);
     } catch (error) {
       if (error.response && error.response.status === 500) {
@@ -40,15 +40,18 @@ function Home() {
     <div className="container">
       {list.map((eachPhone) => {
         return (
-          <div key={eachPhone.id}>
-            <img
-              src={`../assets/images/${eachPhone.imageFileName}`}
-              alt={eachPhone.name}
-            />
-            <h4>{eachPhone.name}</h4>
-          </div>
+          <Link to={`/phones/${eachPhone.id}/details`}>
+            <div key={eachPhone.id}>
+                <img
+                src={`../assets/images/${eachPhone.imageFileName}`}
+                alt={eachPhone.name}
+                />
+                <h4>{eachPhone.name}</h4>
+            </div>
+          </Link>
         );
       })}
+      <Details phones={list}/>
     </div>
   );
 }
