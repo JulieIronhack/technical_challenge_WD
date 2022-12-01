@@ -9,9 +9,8 @@ router.get("/", (req, res, next) => {
 //GET "api/phones/:id" Show phone details
 router.get("/:id", (req, res, next) => {
     const { id } = req.params;
-    const phone = data.filter(eachPhone => eachPhone.id = id)
+    const phone = data.find(eachPhone => eachPhone.id == id)
     res.json(phone)
-    console.log(phone);
 })
 
 module.exports = router;
