@@ -42,3 +42,6 @@ In the event that after three hours you do not have the MVP objectives ready, se
 - Functioning code (server and client side)
 - Short README file describing what is the app about and add instructions on how to use it.
  
+## My Result
+
+![image](https://user-images.githubusercontent.com/77380159/205442038-f500f0b0-a2b7-4318-b6db-e4b43eb3a524.png)
