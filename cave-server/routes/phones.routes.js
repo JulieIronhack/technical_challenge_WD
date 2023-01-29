@@ -9,7 +9,6 @@ router.get("/", (req, res, next) => {
 // GET '/phone/:phonesId' => Show a phone details.
 router.get("/:phoneId", (req, res, next) => {
   const { phonesId } = req.params;
-  
   const responseId = Phone.filter((eachPhone) => (eachPhone.id = phonesId));
   
   res.status(200).json(responseId);

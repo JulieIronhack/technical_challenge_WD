@@ -8,10 +8,6 @@ function Home() {
   const [list, setList] = useState([]);
   const [isFetching, setIsFetching] = useState(true);
 
-//   const { phoneId } = useParams();
-//   console.log(phoneId)
-
-
   useEffect(() => {
     setTimeout(() => {
       getData();
@@ -51,7 +47,7 @@ function Home() {
         {list.map((eachPhone) => {
           return (
             <div key={eachPhone.id}>
-              <Link to={`/phones/${eachPhone.id}`} style={{ color: "white" }}>
+              <Link to={`/phone/${eachPhone.id}`} style={{ color: "white" }}>
                 {eachPhone.manufacturer}
               </Link>
             </div>

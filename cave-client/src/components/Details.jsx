@@ -8,15 +8,13 @@ function Details() {
   const [isFetching, setIsFetching] = useState(true);
 
   const { phoneId } = useParams();
-  console.log(phoneId)
   
   useEffect(() => {
     setIsFetching(true);
     axios
-      .get(`http://localhost:5005/api/phon/${phoneId}`)
+      .get(`http://localhost:5005/api/phone/${phoneId}`)
       .then((response) => {
         setList(response.data);
-        console.log(response.data);
         setIsFetching(false);
       })
       .catch((err) => {
@@ -27,7 +25,7 @@ function Details() {
 
   return (
     <div> Details
-    <h3>Menu </h3>
+    <h3>Menu</h3>
 
     </div>
   )
