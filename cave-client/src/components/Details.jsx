@@ -13,7 +13,7 @@ function Details() {
   useEffect(() => {
     setIsFetching(true);
     axios
-      .get(`http://localhost:5005/api/phones/${phoneId}`)
+      .get(`http://localhost:5005/api/phon/${phoneId}`)
       .then((response) => {
         setList(response.data);
         console.log(response.data);
@@ -27,7 +27,7 @@ function Details() {
 
   return (
     <div> Details
-    <h3>Manu </h3>
+    <h3>Menu </h3>
 
     </div>
   )

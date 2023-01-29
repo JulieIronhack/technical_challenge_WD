@@ -5,6 +5,6 @@ router.get("/", (req, res, next) => {
 });
 
 const phonesRoutes = require('./phones.routes');
-router.use('/phones', phonesRoutes);
+router.use('/phone', phonesRoutes);
 
 module.exports = router;

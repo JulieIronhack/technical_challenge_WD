@@ -20,7 +20,7 @@ function Home() {
 
   const getData = async () => {
     try {
-      const response = await axios.get("http://localhost:5005/api/phones");
+      const response = await axios.get("http://localhost:5005/api/phone");
       setList(response.data);
       setIsFetching(false);
     } catch (error) {
