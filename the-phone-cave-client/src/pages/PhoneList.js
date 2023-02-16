@@ -20,7 +20,7 @@ function PhoneList() {
   return (
     <div>
         {phoneList.map((phoneElm) => (
-          <PhoneCard key={phoneElm._id} {...phoneElm}/>
+          <PhoneCard key={phoneElm._id} {...phoneElm} phoneDetails={phoneElm}/>
         ))}
     </div>
   );

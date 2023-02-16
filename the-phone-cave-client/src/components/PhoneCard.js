@@ -1,16 +1,24 @@
-import { Link } from "react-router-dom";
+import { Accordion } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function PhoneCard({ name, imageFileName, _id }) {
+function PhoneCard(props) {
   return (
-    <div>
-      <Link to={`/phones/${_id}`}>
-        <div>
-        <h3>I'm a phone</h3>
-          <img src={imageFileName} alt="phone" />
-          <h2>{name}</h2>
-        </div>
-      </Link>
-    </div>
+    <>
+      <Accordion className="accordion">
+        <Accordion.Item eventKey="0">
+          <Accordion.Header className="accordionHeader">
+            {props.name}
+          </Accordion.Header>
+          <Accordion.Body>
+            <h4>{props.manufacturer}</h4>
+            <h4>{props.color}</h4>
+            <h4>{props.screen}</h4>
+            <p>{props.description}</p>
+            <h4>{props.price}</h4>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    </>
   );
 }
 
