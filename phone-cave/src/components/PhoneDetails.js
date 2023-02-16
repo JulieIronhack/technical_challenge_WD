@@ -18,18 +18,30 @@ function PhoneDetails(props) {
 
   return (
     <div className="col-7">
-      {details && (
+      {details? 
+      (
         <div>
           <img
             src={``}
             alt={details.name.official}
           />
+          <img src={require(`../assets/images/${details.imageFileName}`)} />
           <h1>{details.name} </h1>
-          <div>{details.manufacturer} </div>
+          <h2>Manufacturer: {details.manufacturer} </h2>
+          <h3>Color: {details.color}</h3>
           <div>{details.description} </div>
-          
+          <h4>Price: {details.price}</h4>
+          <div>
+            <h3>Details:</h3> <br />
+            <h5>Screen: {details.screen}</h5>
+            <h5>Processor: {details.processor}</h5>
+            <h5>Ram: {details.ram}</h5>
+          </div>          
         </div>
-      )}
+      )
+      : <h1>Loading...</h1>
+      }
+      <Link to={`/phones`}>Phone List</Link>
     </div>
   );
 }
