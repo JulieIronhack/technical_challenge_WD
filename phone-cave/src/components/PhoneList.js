@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import "./PhoneList.css"
 
 function PhoneList(props) {
     const [phones, setPhones] = useState([]);
@@ -9,6 +10,7 @@ function PhoneList(props) {
 
     return (
         <div>
+        
             <div className="list-group">
                 {phones.map(phone => {
                     return <Link to={`/phones/${phone.id}`}>{phone.name} </Link>

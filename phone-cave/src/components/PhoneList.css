@@ -1,0 +1,10 @@
+.list-group a{
+    text-align: center;
+    margin-top: 2vh;
+    text-decoration: none;
+    color: black;
+}
+
+.list-group a:hover {
+    color: blue;
+}
