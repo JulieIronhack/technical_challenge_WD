@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap");
+
+.navbarButton {
+  padding: 10px 25px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 3vw;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.Navbar {
+  color: white;
+  padding: 0 30vw;
+  transition: transform 1s ease-out;
+  margin-bottom: 5%;
+}
+
+.Navbar:active {
+  color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbarButton:hover {
+  color: rgb(0, 191, 255);
+}
+
+.divNavbar {
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbarButton {
+    font-size: 1.5vw;
+  }
+}

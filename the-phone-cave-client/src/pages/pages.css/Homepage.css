@@ -1,0 +1,16 @@
+.homepage {
+    height: 100vh;
+}
+
+.homepageImg {
+    width: 100vw;
+    height: auto;
+}
+
+.homepageTitle {
+    margin: 10% 0;
+}
+
+.homepageLink {
+    margin: 10% 0;
+}

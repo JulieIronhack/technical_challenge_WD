@@ -1,0 +1,12 @@
+{
+  "name": "the-phone-cave-server-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6"
+  }
+}
