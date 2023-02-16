@@ -21,9 +21,7 @@ function PhoneList() {
 
 //   if (loading) {
 //     return <SpinnerComponent />;
-// } else {
-//     return false;
-// }
+//   }
 
   return (
     <div>
