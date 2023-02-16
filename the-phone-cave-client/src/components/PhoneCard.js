@@ -1,5 +1,6 @@
 import { Accordion } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./components.css/PhoneCard.css"
 
 function PhoneCard(props) {
   return (
@@ -9,7 +10,7 @@ function PhoneCard(props) {
           <Accordion.Header className="accordionHeader">
             {props.name}
           </Accordion.Header>
-          <Accordion.Body>
+          <Accordion.Body className="cardBody">
             <h4>{props.manufacturer}</h4>
             <h4>{props.color}</h4>
             <h4>{props.screen}</h4>
