@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const mongoose = require("mongoose");
+const Phone = require('../models/Phone.model');
 
 //  Render all the phones
 router.get("/phones", (req, res) => {
