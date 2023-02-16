@@ -19,7 +19,7 @@ function HomePage () {
     const getSinglePhone = async (id) => {
         try {
             setLoading(true)
-            setTimeout(()=>setLoading(false),500)
+            setTimeout(()=>setLoading(false),300)
             const res = await axios.get(`http://localhost:5005/api/phones/${id}`)
             setDetailPhone(res.data)
         }
@@ -45,11 +45,7 @@ function HomePage () {
 
     return (
         <>
-        {loading && (
-            <ClipLoader/>
-        )}
-        {!loading && (
-            <div className='HomePageWrapper'>
+        <div className='HomePageWrapper'>
         <div className={'phoneList'}>
            {phones.map(phone => {
                 return (<h3 key={phone.id} data-index={phone.id} onClick={selectPhone}>{phone.name}</h3>)
@@ -58,14 +54,22 @@ function HomePage () {
             {/* <PhoneList {...phones}/> */}
            
            </div>
-           {
+        
+        {loading && (
+            <ClipLoader/>
+        )}
+        {!loading && (
+            
+        
+           
             <PhoneCard {...detailPhone}/>
-           }
+           
            
            
 
-        </div>
+       
         )}
+        </div>
        
         </>
         
