@@ -35,6 +35,4 @@ For the front-end, you will need to add the following environment variable to th
 - install dependencies: `npm install`
 - create a .env file with the following environment variables:
   - PORT (example, PORT=5005)
-  - ORIGIN, with the location of your frontend app (example, ORIGIN=https://mycoolapp.netlify.com)
-  - TOKEN_SECRET: used to sign auth tokens (example, TOKEN_SECRET=yOuR$EcRetToKEn)
 - run the application: `npm run dev`
