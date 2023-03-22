@@ -1,0 +1,237 @@
+#root {
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;  
+  width: 100vw;
+}
+
+.fullReturn {
+  animation-duration: 1s;
+  animation-name: slidein; 
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdada;
+  width: 100vw;
+  height: auto; 
+  gap: 30px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.frontImage {
+  height: 300px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    margin-top: 100px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #d3d3d3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.frontContainer {
+  border: solid 1px transparent;
+  border-radius: 35px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 50px  rgba(253, 59, 204, 0.274);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 95vw;
+  max-width: 400px;
+}
+
+.frontText {
+  margin-left: -70px;
+  margin-right: 20px;
+  width: 200px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  margin-top: -30px;
+}
+
+.frontPhone {
+  color: rgb(24, 24, 24);
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.295);
+}
+
+.imgContainer {
+  width: 250px;
+  margin-left: 0px;
+  object-fit: contain;
+}
+
+.frontImage {
+  margin-left: -50px; 
+}
+
+.frontButton {
+  border: none;
+box-shadow: 0 0 20px rgba(190, 0, 57, 0.253);
+border-radius: 10px;
+height: 60px;
+width: 170px;
+transition: box-shadow .5s ease, width .5s ease, height .5s ease;
+}
+
+.frontButton:hover {
+  box-shadow: 0 0 40px rgba(190, 0, 47, 0.349);    
+  width: 180px;
+  height: 60px;
+  }
+
+  .navBar {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: #383636;
+    color: white;
+    font-weight: bold;
+    top: 0;
+    margin-bottom: 50px;
+    position: fixed;
+  }
+
+  .navIn{
+    display: flex;
+    align-items: center;
+    gap: 20px
+  }
+
+  input {
+    height: 30px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    max-width: 300px;
+    padding-left: 15px;
+    background-color: #f8d6d6;
+    color: rgb(34, 34, 34);
+  }
+
+  .backImg {
+    width: 80vw;
+    max-width: 600px;
+    margin-top: 100px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.199);
+    margin-bottom: 0px;
+  }
+
+  .backTitle {
+    font-size: 5vw;
+  }
+
+  .description {
+    text-align: justify;
+    width: 80vw;
+    max-width: 800px;
+    color: #383636;
+    margin-bottom: 50px;
+    font-weight: 100;
+    margin-top: 0px;
+  }
+
+  .backContainer {
+    margin-bottom: 100px;
+  }
+
+  .backButton {
+    margin-top: 20px;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.185);
+  }
+
+  .general {
+    margin-top: 100px;
+  }
+
+  .fullReturn2 {
+    display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdada;
+  width: 100%;
+  gap: 30px;
+  }
