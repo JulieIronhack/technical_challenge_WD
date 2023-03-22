@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
+import PhoneList from "./components/PhoneList";
+import { Routes, Route } from "react-router-dom";
+import PhoneDetails from "./components/PhoneDetails";
 
 function App() {
   const [phones, setPhones] = useState([]);
@@ -15,7 +19,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <PhoneList phones={phones} />
+      <Routes>
+        <Route path="/:id" element={<PhoneDetails phones={phones} />} />
+      </Routes>
     </div>
   );
 }
