@@ -19,10 +19,12 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <PhoneList phones={phones} />
-      <Routes>
-        <Route path="/:id" element={<PhoneDetails phones={phones} />} />
-      </Routes>
+      <div className="container">
+        <PhoneList phones={phones} />
+        <Routes>
+          <Route path="/:id" element={<PhoneDetails />} />
+        </Routes>
+      </div>
     </div>
   );
 }

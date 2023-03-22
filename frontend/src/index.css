@@ -67,3 +67,33 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.list-ctn {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.list-ctn div {
+  background-color: #747bff;
+  padding: .5rem;
+}
+.list-ctn a {
+  color: white;
+}
+
+@media only screen and (min-width: 768px)  {
+.details-ctn {
+width: 50%;
+}
+}

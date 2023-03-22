@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function PhoneList({ phones }) {
   return (
-    <div>
+    <div className="list-ctn">
       {phones.map((phone) => (
         <div key={phone.id}>
           <Link to={`/${phone.id}`}>
