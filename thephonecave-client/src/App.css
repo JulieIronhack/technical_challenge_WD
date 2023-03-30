@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  background-color: antiquewhite;
+  font-family: "Rajdhani", sans-serif;
+}
+
+/* PHONE LIST */
+
+h1 {
+  text-align: center;
+  background-color: cadetblue;
+  color: white;
+  padding: 50px;
+}
+
+.phone-list {
+  margin: 20px;
+  text-align: center;
+}
+
+.phone-list li {
+  list-style-type: none;
+}
+
+.phone-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.phone-list li a:visited {
+  color: darkslategray;
+}
+
+/* PHONE DETAILS */
+#phone-details {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+img {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px darkgrey;
+}
+
+p {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+span {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid darkslategray;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+  background-color: cadetblue;
+  box-shadow: 5px 5px 5px darkgray;
+}
