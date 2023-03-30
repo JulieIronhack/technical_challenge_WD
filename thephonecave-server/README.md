@@ -1,9 +1,3 @@
-# The Phone Cave (WD)
-
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
-
-You can find a README file in each section.
-
 ## How to make it work
 This is a Node app that uses Express. In order to make it work, please use "npm run dev".
 

@@ -17,7 +17,6 @@ router.get("/:id", (req, res, next) => {
   const { id } = req.params;
   try {
     const singlePhone = data.find((phone) => phone.id === Number(id));
-    console.log(data, singlePhone, id, typeof id);
     res.json(singlePhone);
   } catch (error) {
     next(error);

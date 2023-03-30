@@ -29,11 +29,9 @@ function PhonesList() {
       <h1>List of Phones</h1>
       {allPhones.map((phone) => {
         return (
-          <div className="phone-list">
+          <div key={phone.id} className="phone-list">
             <li>
-              <NavLink key={phone.id} to={`/phones/${phone.id}`}>
-                {phone.name}
-              </NavLink>
+              <NavLink to={`/phones/${phone.id}`}>{phone.name}</NavLink>
             </li>
           </div>
         );
