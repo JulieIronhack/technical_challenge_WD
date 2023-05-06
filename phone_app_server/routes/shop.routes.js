@@ -4,7 +4,7 @@ const allPhones = require("../data/phones.json");
 // GET /api/phones - Show all phones
 router.get("/phones", (req, res) => {
   try {
-    res.json(allPhones);
+    res.status(200).json(allPhones);
   } catch (error) {
     (error) => console.log(error);
   }
@@ -14,14 +14,14 @@ router.get("/phones", (req, res) => {
 router.get("/phones/:id", (req, res) => {
   const { id } = req.params;
   try {
-    const singleItem = allPhones.find((phone) => phone.id === Number(id));
-    res.json(singleItem);
+    const [singleItem] = allPhones.filter((phone) => phone.id === Number(id));
+    res.status(200).json(singleItem);
   } catch (error) {
-    next(error);
+    (error) => console.log(error);
   }
   // another approach
   // const phone = Object.keys(allPhones).find((item) => item === req.params.id);
-  // res.json(allPhones[phone]);
+  // res.status(200).json(allPhones[phone]);
 });
 
 module.exports = router;
