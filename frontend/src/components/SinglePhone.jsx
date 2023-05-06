@@ -27,7 +27,8 @@ function SinglePhone() {
     <div>
       {phoneData && (
         <div>
-          <h1>{phoneData.name}</h1>
+          <h1>Single Phone information</h1>
+          <h3>{phoneData.name}</h3>
         </div>
       )}
     </div>
