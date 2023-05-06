@@ -29,6 +29,10 @@ function SinglePhone() {
         <div>
           <h1>Single Phone information</h1>
           <h3>{phoneData.name}</h3>
+          <img
+            src={require(`../../assets/images/${phoneData.imageFileName}`)}
+            alt="name"
+          />
         </div>
       )}
     </div>
