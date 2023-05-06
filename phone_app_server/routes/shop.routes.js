@@ -19,7 +19,7 @@ router.get("/phones/:id", (req, res) => {
   } catch (error) {
     next(error);
   }
-  // anpther approach
+  // another approach
   // const phone = Object.keys(allPhones).find((item) => item === req.params.id);
   // res.json(allPhones[phone]);
 });
