@@ -37,7 +37,7 @@ function AllPhones() {
       <h1>All Phones</h1>
 
       {phoneData.map((phoneData) => (
-        <PhoneCard key={phoneData.id} {...phoneData} id={phoneData.id} />
+        <PhoneCard key={phoneData.id} {...phoneData} id={phoneData._id} />
       ))}
     </div>
   );

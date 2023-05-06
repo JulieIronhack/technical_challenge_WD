@@ -20,22 +20,19 @@ router.get("/phones", (req, res, next) => {
 
 //single phone
 
-router.get("/phones/:id", (req, res, next) => {
-  const { id } = req.params;
+router.get("/phones/:phoneId", (req, res, next) => {
+  const { phoneId } = req.params;
 
-  if (!mongoose.Types.ObjectId.isValid(id)) {
+  if (!mongoose.Types.ObjectId.isValid(phoneId)) {
     res.status(400).json({ message: "Specified id is not valid" });
     return; //error handeling
   }
 
-  Phones.findById(req.params.id)
+  Phones.findById(req.params.phoneId)
     .then((onePhone) => res.status(200).json(onePhone))
     .catch((error) => {
       console.log(error);
     });
-});
-router.get("/", (req, res, next) => {
-  res.json("All good in here");
 });
 
 module.exports = router;
