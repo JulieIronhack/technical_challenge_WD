@@ -53,11 +53,16 @@ function App() {
                   src={images[phone.imageFileName]}
                   alt={`${phone.name}`}
                 />
-                <h2>{phone.name}</h2>
-                <p>{phone.price}€</p>
-                <button onClick={() => handleSeeMore(phone.id)}>
-                  See more
-                </button>
+                <div className="phonesList__card__container">
+                  <h2 className="phonesList__card__header">{phone.name}</h2>
+                  <p className="phonesList__card__price">{phone.price}€</p>
+                  <button
+                    className="phonesList__card__btn"
+                    onClick={() => handleSeeMore(phone.id)}
+                  >
+                    See more
+                  </button>
+                </div>
               </div>
             );
           })}
@@ -75,18 +80,33 @@ function App() {
                 src={images[phoneDetails.imageFileName]}
                 alt={`${phoneDetails.name}`}
               />
-              <h2>{phoneDetails.name}</h2>
-              <small>{phoneDetails.manufacturer}</small>
-              <p>{phoneDetails.description}</p>
-              <p>Price: {phoneDetails.price}€</p>
+              <h2 className="phoneDetailsModal__header">{phoneDetails.name}</h2>
+              <small className="phoneDetailsModal__manufacturer">
+                {phoneDetails.manufacturer}
+              </small>
+              <p className="phoneDetailsModal__description">
+                {phoneDetails.description}
+              </p>
+              <p className="phoneDetailsModal__price">
+                Price: {phoneDetails.price}€
+              </p>
 
-              <h3>Technical details</h3>
-              <p>Color: {phoneDetails.color}</p>
-              <p>Screen: {phoneDetails.screen}</p>
-              <p>Processor: {phoneDetails.processor}</p>
-              <p>RAM: {phoneDetails.ram}</p>
+              <div className="phoneDetailsModal__technicalDetails">
+                <h3 className="phoneDetailsModal__technicalDetails__header">
+                  Technical details
+                </h3>
+                <p>Color: {phoneDetails.color}</p>
+                <p>Screen: {phoneDetails.screen}</p>
+                <p>Processor: {phoneDetails.processor}</p>
+                <p>RAM: {phoneDetails.ram}</p>
+              </div>
 
-              <button onClick={handleCloseModal}>Close</button>
+              <button
+                className="phoneDetailsModal__closeBtn"
+                onClick={handleCloseModal}
+              >
+                Close
+              </button>
             </>
           )}
         </div>

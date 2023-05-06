@@ -3,8 +3,6 @@ const importAllImages = (obj) => {
 
   obj.keys().map((item) => (images[item.replace("./", "")] = obj(item)));
 
-  console.log("Images: ", images);
-
   return images;
 };
 

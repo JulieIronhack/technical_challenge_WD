@@ -2,8 +2,69 @@
   height: 100%;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phonesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.phonesList__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 410px;
+  width: 250px;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.phonesList__card * {
+  margin: 0;
+}
+
 .phonesList__card__img {
   width: 200px;
+  height: 250px;
+}
+
+.phonesList__card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: lightgrey;
+}
+
+.phonesList__card__header,
+.phonesList__card__price {
+  padding: 10px 0;
+}
+
+.phonesList__card__price {
+  font-size: 20px;
+}
+
+.phonesList__card__btn {
+  margin: 10px 0;
+  padding: 5px;
+
+  background-color: orange;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .phoneDetailsModal {
@@ -54,17 +115,56 @@
   width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.phoneDetailsModal__header {
+  padding: 0 0 5px 0;
+
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.phoneDetailsModal__manufacturer {
+  padding: 5px 0;
+}
+
+.phoneDetailsModal__manufacturer {
+  font-size: 15px;
+}
+
+.phoneDetailsModal__description {
+  width: 90%;
+  padding: 5px;
+}
+
+.phoneDetailsModal__price {
+  padding: 15px 0 0 0;
+
+  font-size: 20px;
+}
+
+.phoneDetailsModal__technicalDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 90%;
+
+  padding: 10px 0;
+}
+
+.phoneDetailsModal__technicalDetails__header {
+  padding: 5px;
+
+  font-size: 25px;
+}
+
+.phoneDetailsModal__technicalDetails p {
+  align-self: flex-start;
+}
+
+.phoneDetailsModal__closeBtn {
+  padding: 5px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: orange;
 }
