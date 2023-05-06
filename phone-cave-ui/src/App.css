@@ -1,0 +1,109 @@
+
+.App {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+
+.header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+
+.spinner {
+  margin-top: 2rem;
+}
+
+.phone-container {
+  margin-top: 2rem;
+}
+
+.phone-list {
+  margin-bottom: 2rem;
+}
+
+.phone-list-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.phone-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.phone-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.phone-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.phone-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.phone-details {
+  margin-top: 2rem;
+}
+
+.phone-details-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.phone-details-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-details-image img {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.phone-details-info p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .phone-card {
+    width: 100%;
+  }
+
+  .phone-details-content {
+    flex-direction: column;
+  }
+
+  .phone-details-image img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
