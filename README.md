@@ -41,4 +41,33 @@ In the event that after three hours you do not have the MVP objectives ready, se
 
 - Functioning code (server and client side)
 - Short README file describing what is the app about and add instructions on how to use it.
+
+## Getting Started with the Server-Side
+
+1. Install Node.js and npm if they are not already installed on your machine.
+2. Clone the repository and navigate to the server-side directory:
+3. git clone <repository_url>
+4. cd server
+5. Install the dependencies: npm install
+6. Start the server: npm start
+7. The server should now be running on `http://localhost:3000`.
+
+## Getting Started with the Client-Side
+1. Make sure you have Node.js and npm installed on your machine.
+2. Clone the repository and navigate to the client-side directory: git clone <repository_url>
+3. cd client
+4. 
+3. Install the dependencies: npm install
+4. 5. The client-side app should now be running on `http://localhost:3000`.
+
+---
+
+Enjoy exploring The Phone Cave catalog!
+Make sure to replace <repository_url> with the actual URL of your repository.
+
+
+
+
+
+
  
