@@ -7,8 +7,8 @@ router.get('/phones', (req, res, next) => {
 });
 
 // GET phone by ID
-router.get('/phones/:id', (req, res, next) => {
-    const phone = phones.find(p => p.id == req.params.id);
+router.get('/phones/:phoneId', (req, res, next) => {
+    const phone = phones.find(p => p.id.toString() == req.params.phoneId);
     console.log(phone)
     if (phone) {
         res.json(phone);
@@ -16,6 +16,8 @@ router.get('/phones/:id', (req, res, next) => {
         res.status(404).send('Phone not found');
     }
 });
+
+
 
 
 module.exports = router;
