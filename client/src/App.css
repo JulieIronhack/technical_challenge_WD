@@ -1,0 +1,93 @@
+.app {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  background-color: #25b09b;
+  border-bottom: 1px solid #000;
+}
+
+.header h1 {
+  font-size: 35px;
+  color: #fff;
+}
+
+.phonesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.phonesList__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 410px;
+  width: 250px;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.phonesList__card * {
+  margin: 0;
+}
+
+.phonesList__card__img {
+  width: 200px;
+  height: 250px;
+}
+
+.phonesList__card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: lightgrey;
+}
+
+.phonesList__card__header,
+.phonesList__card__price {
+  padding: 10px 0;
+}
+
+.phonesList__card__price {
+  font-size: 20px;
+}
+
+.phonesList__card__btn {
+  margin: 10px 0;
+  padding: 5px;
+
+  background-color: orange;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.phoneDetailsModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #fff;
+}
