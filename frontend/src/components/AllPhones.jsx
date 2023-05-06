@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PhoneCard from "./PhoneCard";
 import LoadingComponent from "./LoadingComponent";
-import { Link } from "react-router-dom";
 
 const API_URL = "http://localhost:5005";
 
@@ -38,7 +37,7 @@ function AllPhones() {
       <h1>All Phones</h1>
 
       {phoneData.map((phoneData) => (
-        <PhoneCard key={phoneData.id} {...phoneData} />
+        <PhoneCard key={phoneData.id} {...phoneData} id={phoneData.id} />
       ))}
     </div>
   );

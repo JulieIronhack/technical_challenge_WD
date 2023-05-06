@@ -1,9 +1,14 @@
 import AllPhones from "./components/AllPhones";
+import SinglePhone from "./components/SinglePhone";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <AllPhones />
+      <Routes>
+        <Route path="/" element={<AllPhones />} />
+        <Route path="/api/phones/:id" element={<SinglePhone />} />
+      </Routes>
     </div>
   );
 }

@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const data = "../../../data/phones.json";
 const Phones = require("../models/Phone.model");
+const mongoose = require("mongoose");
 
 //retrieve data from all the phones
 router.get("/phones", (req, res, next) => {
@@ -32,6 +33,9 @@ router.get("/phones/:id", (req, res, next) => {
     .catch((error) => {
       console.log(error);
     });
+});
+router.get("/", (req, res, next) => {
+  res.json("All good in here");
 });
 
 module.exports = router;

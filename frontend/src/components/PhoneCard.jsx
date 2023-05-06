@@ -11,10 +11,13 @@ function PhoneCard({
   screen,
   processor,
   ram,
+  id,
 }) {
   return (
     <div>
-      <h1>{name}</h1>
+      <Link to={`/api/phones/${id}`}>
+        <h1>{name}</h1>
+      </Link>
 
       <p>{description}</p>
       <h3>${price}</h3>
