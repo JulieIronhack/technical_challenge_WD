@@ -5,10 +5,6 @@ const express = require("express");
 // https://www.npmjs.com/package/morgan
 const logger = require("morgan");
 
-// ℹ️ Needed when we deal with cookies (we will when dealing with authentication)
-// https://www.npmjs.com/package/cookie-parser
-const cookieParser = require("cookie-parser");
-
 // ℹ️ Needed to accept from requests from 'the outside'. CORS stands for cross origin resource sharing
 // unless the request if from the same domain, by default express wont accept POST requests
 const cors = require("cors");
@@ -34,5 +30,4 @@ module.exports = (app) => {
   // To have access to `body` property in the request
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
-  app.use(cookieParser());
 };
