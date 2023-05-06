@@ -1,0 +1,88 @@
+.phoneDetailsModal h2,
+.phoneDetailsModal h3,
+.phoneDetailsModal p {
+  margin: 0;
+}
+
+.phoneDetailsModal__loadingSpinner {
+  width: 50px;
+  padding: 8px;
+  margin: auto 0;
+
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #25b09b;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+  -webkit-mask-composite: source-out;
+  mask-composite: subtract;
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.phoneDetailsModal__img {
+  width: 200px;
+}
+
+.phoneDetailsModal__header {
+  padding: 0 0 5px 0;
+
+  font-size: 25px;
+}
+
+.phoneDetailsModal__manufacturer {
+  padding: 5px 0;
+  font-size: 15px;
+}
+
+.phoneDetailsModal__description {
+  width: 90%;
+  padding: 5px;
+}
+
+.phoneDetailsModal__price {
+  padding: 15px 0 0 0;
+
+  font-size: 20px;
+}
+
+.phoneDetailsModal__technicalDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 90%;
+
+  padding: 10px 0;
+}
+
+.phoneDetailsModal__technicalDetails__header {
+  padding: 5px;
+
+  font-size: 25px;
+}
+
+.phoneDetailsModal__technicalDetails p {
+  align-self: flex-start;
+}
+
+.phoneDetailsModal__closeBtn {
+  padding: 5px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: orange;
+}
+
+@media (min-width: 600px) {
+  .phoneDetailsModal__description {
+    text-align: center;
+  }
+}

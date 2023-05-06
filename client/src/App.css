@@ -6,6 +6,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+
+  background-color: #25b09b;
+  border-bottom: 1px solid #000;
+}
+
+.header h1 {
+  font-size: 35px;
+  color: #fff;
 }
 
 .phonesList {
@@ -83,7 +92,7 @@
   background-color: #fff;
 }
 
-.phoneDetailsModal h2,
+/* .phoneDetailsModal h2,
 .phoneDetailsModal h3,
 .phoneDetailsModal p {
   margin: 0;
@@ -168,3 +177,4 @@
   cursor: pointer;
   background-color: orange;
 }
+ */

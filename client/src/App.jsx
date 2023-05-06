@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import { images } from "./assets/index";
 import "./App.css";
+import { Modal } from "./components/Modal";
 
 function App() {
   const [phonesData, setPhonesData] = useState(false);
@@ -69,46 +70,11 @@ function App() {
       </section>
       {showModal && (
         <div className="phoneDetailsModal">
-          {showLoadingSpinner && (
-            <div className="phoneDetailsModal__loadingSpinner"></div>
-          )}
-
-          {!showLoadingSpinner && (
-            <>
-              <img
-                className="phoneDetailsModal__img"
-                src={images[phoneDetails.imageFileName]}
-                alt={`${phoneDetails.name}`}
-              />
-              <h2 className="phoneDetailsModal__header">{phoneDetails.name}</h2>
-              <small className="phoneDetailsModal__manufacturer">
-                {phoneDetails.manufacturer}
-              </small>
-              <p className="phoneDetailsModal__description">
-                {phoneDetails.description}
-              </p>
-              <p className="phoneDetailsModal__price">
-                Price: {phoneDetails.price}€
-              </p>
-
-              <div className="phoneDetailsModal__technicalDetails">
-                <h3 className="phoneDetailsModal__technicalDetails__header">
-                  Technical details
-                </h3>
-                <p>Color: {phoneDetails.color}</p>
-                <p>Screen: {phoneDetails.screen}</p>
-                <p>Processor: {phoneDetails.processor}</p>
-                <p>RAM: {phoneDetails.ram}</p>
-              </div>
-
-              <button
-                className="phoneDetailsModal__closeBtn"
-                onClick={handleCloseModal}
-              >
-                Close
-              </button>
-            </>
-          )}
+          <Modal
+            showLoadingSpinner={showLoadingSpinner}
+            phoneDetails={phoneDetails}
+            onCloseModal={handleCloseModal}
+          />
         </div>
       )}
     </main>
