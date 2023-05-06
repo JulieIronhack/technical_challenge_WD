@@ -31,7 +31,7 @@ Once done with this, do a pull request to submit your work.
 
 ## About the App
 
-The Phone Cave app is a catalog showcasing various phone models available at The Phone Cave store. It allows users to browse through the list of phones, view detailed information about each phone, and experience an eye-appealing interface.
+The Phone Cave app is a catalog showcasing various phone models available at The IronPhones store. It allows users to browse through the list of phones, view detailed information about each phone, and experience an eye-appealing interface.
 
 ## Getting Started
 
@@ -60,7 +60,7 @@ To run the app locally, follow these steps:
 
 ## Usage
 
-- Open a web browser and visit `http://localhost:3000` to access the app.
+- Open a web browser and visit `http://localhost:3001` to access the app.
 - You will see a list of phones available at The Phone Cave.
 - Click on a phone to view detailed information about it.
 - To go back to the list, click on the phone image again or select another phone from the list.
