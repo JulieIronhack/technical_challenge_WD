@@ -20,11 +20,11 @@ export default function PhoneDetails({ phoneId, onClearPhone }) {
         <Fragment>
           <img src={`/images/${phone.imageFileName}`} alt={phone.name} />
           <h2>{phone.name}</h2>
-          <h4>Manufacturer: {phone.manufacturer}</h4>
+          <h4><strong>Manufacturer: </strong>{phone.manufacturer}</h4>
           <p>{phone.description}</p>
-          <p>Price: € {phone.price}</p>
-          <p>Screen: {phone.screen}</p>
-          <p>Processor: {phone.processor}</p>
+          <p><strong>Price:</strong> € {phone.price}</p>
+          <p><strong>Screen:</strong> {phone.screen}</p>
+          <p><strong>Processor:</strong> {phone.processor}</p>
         </Fragment>
       ) : (
         <div id="loader"></div>

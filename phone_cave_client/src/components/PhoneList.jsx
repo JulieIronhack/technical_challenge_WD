@@ -20,9 +20,9 @@ export default function PhoneList({ onAction }) {
       <ul>
         {phoneList.length !== 0 ? (
           phoneList.map((phone) => (
-            <ul key={phone.id} onClick={onAction.bind(null, phone.id)}>
+            <li key={phone.id} onClick={onAction.bind(null, phone.id)}>
               {phone.name}
-            </ul>
+            </li>
           ))
         ) : (
           <div id="loader"></div>
