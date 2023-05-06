@@ -33,14 +33,14 @@ function PhoneList() {
         phones.map(({ id, name, manufacturer, description, price, imageFileName, screen, processor, ram }) => {
             return (
                 <Card
-                    className="phone border-0"
+                    className="phone border-0 text-center"
                     key={id}
                     style={{ width: "40rem" }}
                 >
                     {imageFileName.length === 0 ? (
                         <></>
                     ) : (
-                        <img src={require(`../images/${imageFileName}`)} alt={name} style={{ width: "20rem" }} />
+                        <img src={require(`../images/${imageFileName}`)} alt={name} />
                     )}
 
                     <Card.Title>{name}</Card.Title>
