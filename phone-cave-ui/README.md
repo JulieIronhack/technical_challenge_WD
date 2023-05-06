@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# The Phone Cave (WD)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
 
-## Available Scripts
+## The challenge (Duration: 3 hours)
 
-In the project directory, you can run:
+Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
 
-### `npm start`
+### Iteration #1
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create a REST API (NodeJS) server that meets the following requirements:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+| Route                 | HTTP Verb | Description    |
+| --------------------- | --------- | -------------- |
+| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
+| `/phones/:id`         | GET       | Show a phone details|
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Iteration #2
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
+- Use Axios (or a similar library) in order to obtain data from the REST API
+- Show a list with all the phones
+- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
+- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Iteration #3
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
 
-### `npm run eject`
+Once done with this, do a pull request to submit your work. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deadline
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You have three hours to work on this challenge.
+In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Must-have Deliverables
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Functioning code (server and client side)
+- Short README file describing what is the app about and add instructions on how to use it.
+ 
