@@ -1,0 +1,71 @@
+*{
+    box-sizing: content-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 30vw;
+    height: auto;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+h2{
+    font-size: 3rem;
+}
+
+header{
+    margin: 0;
+    padding: 20px;
+    background-color:aliceblue;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.all-phones{
+    display: grid;
+    place-items: left;
+    height: 80vh;
+    overflow: scroll;
+    margin: 20px;
+}
+
+.phone{
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 30vw;
+}
+
+.one-phone:hover{
+    background-color: lightgrey;
+}
+
+.phone-details{
+    display: grid;
+    text-align: center;
+    width: 60vw;
+}
+
+.text-red{
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+    h1,h2{
+        font-size: 2rem;
+    }
+    img{
+        width: 30vw;
+    }
+}
