@@ -35,7 +35,7 @@ const Home = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  ">
         {phoneData &&
           phoneData.map((phone) => (
-            <Link to={`/shoes/${phone.id}`} key={phone.id}>
+            <Link to={`/phones/${phone.id}`} key={phone.id}>
               <img
                 className="w-full"
                 src={`assets/images/${phone.imageFileName}`}

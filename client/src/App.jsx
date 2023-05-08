@@ -11,7 +11,7 @@ function App() {
       <main className="w-screen min-h-screen flex flex-col justify-center items-center py-16">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/shoes/:id" element={<PhoneDetail />} />
+          <Route path="/phones/:id" element={<PhoneDetail />} />
         </Routes>
       </main>
       <Footer />
