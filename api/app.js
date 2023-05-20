@@ -7,6 +7,8 @@ const app = express();
 
 app.use(logger("dev"));
 
+const cors = require("./config/cors.config");
+app.use(cors);
 app.use(express.json());
 const api = require("./config/routes.config");
 app.use("/api/v1", api);
