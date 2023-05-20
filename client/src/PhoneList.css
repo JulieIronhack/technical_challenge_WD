@@ -1,0 +1,71 @@
+.phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.phone-card {
+  flex: 1 0 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  transition: flex 0.3s ease;
+}
+
+.phone-card.active {
+  flex: 2 0 400px;
+}
+
+
+@media (max-width: 600px) {
+  .phone-card {
+    flex: 1 0 100%;
+    margin: 5px 0; 
+  }
+  
+  .phone-card.active {
+    flex: 1 0 100%;
+  }
+
+}
+.phone-details {
+  margin: 10px; 
+  padding: 15px; 
+}
+
+
+
+.phone-card .phone-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-card .phone-image-container {
+  width: 80%; 
+  overflow: hidden;
+}
+
+.phone-card .phone-image {
+  width: 100%;
+  height: auto;
+  transition: max-width 0.3s ease;
+  object-fit: cover;
+}
+
+.phone-card.active .phone-image {
+  max-width: 150px;
+}
+
+.phone-card .phone-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.phone-card .phone-details {
+  margin-top: 10px;
+}
