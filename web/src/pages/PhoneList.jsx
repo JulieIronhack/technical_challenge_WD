@@ -19,11 +19,11 @@ const PhoneList = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 w-11/12 mx-auto place-items-center gap-y-20">
+    <div className="grid grid-cols-4 w-11/12 mx-auto place-items-center gap-y-20 pt-20 pb-10">
       {phones ? (
         phones.map((phone) => (
           <div key={phone.id} className="flex flex-col justify-between rounded-lg border-2 border-gray-600 w-[300px] h-[450px]">
-            <div className="w-[200px] mx-auto">
+            <div className="w-[200px] m-auto">
               <img src={`./images/${phone.imageFileName}`} alt={phone.name} className="rounded-lg" />
             </div>
             <div className="flex flex-col px-8 gap-4 pb-6">

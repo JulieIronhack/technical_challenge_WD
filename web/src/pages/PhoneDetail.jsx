@@ -22,7 +22,7 @@ const PhoneDetail = () => {
   }, [id]);
 
   return (
-    <div className="w-11/12 mx-auto flex justify-center">
+    <div className="w-11/12 mx-auto flex justify-center pt-20 pb-10">
       {phone ? (
         <div className="grid grid-cols-2 place-items-center rounded-lg border-2 border-gray-800 px-5">
           <div>
@@ -30,7 +30,7 @@ const PhoneDetail = () => {
           </div>
           <div className="flex flex-col gap-8">
             <h1 className="uppercase font-bold text-2xl">{phone.name}</h1>
-            <p>{phone.description}</p>
+            <p className="text-xl">{phone.description}</p>
             <h2 className="font-semibold text-xl">Specifications:</h2>
             <ul className="text-xl flex flex-col gap-2">
               <li>
