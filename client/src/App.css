@@ -1,0 +1,87 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.phone-list {
+  list-style: none;
+  padding: 0;
+}
+
+.phone-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.phone-item:hover {
+  background-color: #f2f2f2;
+}
+
+.phone-item.selected {
+  background-color: #eaf5ff;
+}
+
+.phone-details {
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.phone-details.show {
+  opacity: 1;
+}
+
+.phone-details img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.phone-details.show img {
+  opacity: 1;
+}
+
+.phone-details.hide img {
+  opacity: 0;
+}
+
+.phone-details p {
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.phone-details.show p {
+  opacity: 1;
+}
+
+.phone-details strong {
+  font-weight: bold;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 24px;
+  color: #888;
+  transition: opacity 0.3s ease;
+}
+
+.loading-spinner.hide {
+  opacity: 0;
+}
