@@ -2,7 +2,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+    <h2 >Phone Cave</h2>
   )
 }
 

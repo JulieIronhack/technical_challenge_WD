@@ -1,9 +1,9 @@
 import React from 'react'
 
-function PhoneItem({ phone }) {
+function PhoneItem({ phone, onClick:handleClick }) {
   return (
     <>
-      <div className="card mb-3" style={{maxWidth: '540px'}}>
+      <div className="card mb-3" style={{maxWidth: '540px'}} onClick={handleClick}>
         <div className="row g-0">
           <div className="col-md-4">
             <img src={phone.imageUrl} className="img-fluid rounded-start" alt="..." />
@@ -11,8 +11,7 @@ function PhoneItem({ phone }) {
           <div className="col-md-8">
             <div className="card-body">
               <h5 className="card-title">{phone.name}</h5>
-              {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
-              <p className="card-text"><small className="text-body-secondary">{phone.price} €</small></p>
+              <h6><span className="badge bg-warning" style={{color: 'black'}}>{phone.price} €</span></h6>
             </div>
           </div>
         </div>

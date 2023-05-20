@@ -15,9 +15,9 @@ module.exports.list = (req, res, next) => {
 
 module.exports.detail = (req, res, next) => {
   const phoneId = req.params.id
-  const phoneDetail = phones.find(phone => phone.id == phoneId)
+  const phoneDetail = dataPhones.find(phone => phone.id == phoneId)
   if (phoneDetail) {
-    phoneDetail.imageFileName = `${process.env.API_URL}/assets/images/${phoneDetail.imageFileName}`
+    phoneDetail.imageUrl = `${process.env.API_URL}/assets/images/${phoneDetail.imageFileName}`
     res.json(phoneDetail)
   } else {
     next(createError(404, `Phone not found`))
