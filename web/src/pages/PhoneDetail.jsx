@@ -24,7 +24,7 @@ const PhoneDetail = () => {
   return (
     <div className="w-11/12 mx-auto flex justify-center pt-20 pb-10">
       {phone ? (
-        <div className="grid grid-cols-2 place-items-center rounded-lg border-2 border-gray-800 px-5">
+        <div className="grid lg:grid-cols-2 place-items-center rounded-lg border-2 border-gray-800 px-5">
           <div>
             <img src={`/images/${phone.imageFileName}`} alt={phone.name} />
           </div>
@@ -53,7 +53,7 @@ const PhoneDetail = () => {
                 <span className="font-bold">Color:</span> {phone.color}
               </li>
             </ul>
-            <span className="font-bold text-4xl">{phone.price}€</span>
+            <span className="font-bold text-4xl mb-4 text-center">{phone.price}€</span>
           </div>
         </div>
       ) : (

@@ -19,7 +19,7 @@ const PhoneList = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 w-11/12 mx-auto place-items-center gap-y-20 pt-20 pb-10">
+    <div className="grid grid-cols-1 lg:grid-cols-4 w-11/12 mx-auto place-items-center gap-y-20 pt-20 pb-10">
       {phones ? (
         phones.map((phone) => (
           <div key={phone.id} className="flex flex-col justify-between rounded-lg border-2 border-gray-600 w-[300px] h-[450px]">
