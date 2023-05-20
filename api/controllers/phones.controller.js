@@ -2,7 +2,13 @@ const data = require("../data/phones.json");
 
 module.exports.list = (req, res, next) => {
   try {
-    res.json(data);
+    const phones = data.map((phone) => ({
+      name: phone.name,
+      id: phone.id,
+      description: phone.description,
+      imageFileName: phone.imageFileName,
+    }));
+    res.json(phones);
   } catch (error) {
     next(error);
   }

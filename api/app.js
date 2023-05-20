@@ -2,12 +2,14 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
+const cors = require("./config/cors");
 const logger = require("morgan");
 const createError = require("http-errors");
 
 app.use(logger("dev"));
+app.use(cors);
 
-app.use("/api/v1", require("./config/routes.config"))
+app.use("/api/v1", require("./config/routes.config"));
 
 app.use((req, res, next) => next(createError(404, "Route not found")));
 

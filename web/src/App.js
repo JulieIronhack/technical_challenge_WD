@@ -1,9 +1,15 @@
+import PhonesList from "./phones/PhonesList";
 import "./App.css";
+import { Route, Routes } from "react-router";
+import PhoneDetail from "./phones/PhoneDetail";
 
 function App() {
-  return <div className="App">
-    <h1>Holi</h1>
-  </div>;
+  return (
+    <Routes>
+      <Route path="/" element={<PhonesList />} />
+      <Route path="/:phoneId" element={<PhoneDetail />} />
+    </Routes>
+  );
 }
 
 export default App;
