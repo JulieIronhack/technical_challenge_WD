@@ -1,9 +1,12 @@
-const phones = require('../data/phones.json')
+const dataPhones = require('../data/phones.json')
 const createError = require('http-errors')
 
 module.exports.list = (req, res, next) => {
-  if (phones) {
-    console.log('phones data ', phones)
+  if (dataPhones) {
+    const phones = dataPhones.map((phone) => {
+      phone.imageUrl = `${process.env.API_URL}/assets/images/${phone.imageFileName}`
+      return phone
+    })
     res.json(phones)
   } else {
     next(createError(404, `Phones data not found`))
