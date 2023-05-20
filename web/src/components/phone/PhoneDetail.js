@@ -9,7 +9,6 @@ function PhoneDetail() {
 
   useEffect(() => {
     const phoneId = location.search.split('id=')[1]
-    console.log('useEffect ', phoneId)
 
     if (phoneId) {
       phoneService.detail(phoneId)
@@ -45,7 +44,7 @@ function PhoneDetail() {
         <div className="card-body">
           <h5 className="card-title">{phone.name} by {phone.manufacturer}</h5>
           <p className="card-text">{phone.description}</p>
-          <p className="card-text"><h6 className="text-body-secondary"><b>Price: </b> {phone.price}  €</h6></p>
+          <div className="card-text"><h6 className="text-body-secondary"><b>Price: </b> {phone.price}  €</h6></div>
         </div>
       </div>
     </>
