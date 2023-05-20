@@ -14,15 +14,19 @@ function PhonesList() {
 
   return (
     <div>
-      <h1>Phones</h1>
+      <h1 className="text-4xl text-center mt-10 text-red-600/75">
+        The Phone Cave
+      </h1>
       {phones.map((phone) => {
         return (
-          <div key={phone.id}>
+          <div
+            key={phone.id}
+            className="flex justify-center content-center mt-40 flex-wrap "
+          >
             <PhoneItem
               name={phone.name}
               imageFileName={phone.imageFileName}
               id={phone.id}
-              description={phone.description}
             />
           </div>
         );

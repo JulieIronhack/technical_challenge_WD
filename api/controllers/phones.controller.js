@@ -19,7 +19,6 @@ module.exports.detail = (req, res, next) => {
 
   try {
     const onePhone = data.find((phone) => phone.id === parseInt(id));
-    console.log(onePhone);
     res.json(onePhone);
   } catch (error) {
     next(error);
