@@ -17,19 +17,20 @@ function PhonesList( { phones }) {
         {phones?.map((phone) => <Link onClick={() => handleClickView(phone)} style={{textDecoration: 'none', color: 'black'}}><div key={phone.id}><PhonesItem {...phone}/></div></Link>)}
       </div>
       <div>
-        {view && <div class="card mt-4 mx-4" style={{width: '18rem'}}>
-          <div class="card-body">
+        {!view ? (<div style={{width: '18rem'}}></div>) : (
+          <div class="card mt-4 mx-4" style={{width: '18rem'}}>
+            <div class="card-body">
             <h5 class="card-title">{phoneDetail.name}</h5>
             <p class="card-text">{phoneDetail.description}</p>
             <p class="card-text">Done By: {phoneDetail.manufacturer}</p>
             <p class="card-text">Screen: {phoneDetail.screen}</p>
             <p class="card-text">Processor: {phoneDetail.processor} - RAM: {phoneDetail.ram}</p>
             <p class="card-text"><b>Price: {phoneDetail.price}</b></p>
+            </div>
           </div>
-        </div>}
-      </div>
-    </div>
-    
+          )} 
+      </div>    
+    </div>  
   )
 }
 
