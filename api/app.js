@@ -5,10 +5,15 @@ const logger = require('morgan');
 const createError = require('http-errors');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors');
+const corsOptions = {
+  origin: 'http://localhost:3000'
+};
 
 const app = express();
 
 app.use(logger('dev'));
+app.use(cors(corsOptions));
 
 
 app.get('/phones', (req, res) => {
