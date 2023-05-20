@@ -3,6 +3,7 @@ const logger = require("morgan");
 
 const app = express();
 
+app.use(require("./config/cors.config"));
 app.use(express.json());
 app.use(logger("dev"));
 
