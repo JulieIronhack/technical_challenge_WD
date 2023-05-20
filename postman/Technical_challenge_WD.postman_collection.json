@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "76b0cb1d-f381-45cd-89c2-3698d5305a26",
+		"name": "Technical_challenge_WD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Phones",
+			"item": [
+				{
+					"name": "Phones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/phones",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"phones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Phone",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_API_URL}}/phones/:id",
+							"host": [
+								"{{BASE_API_URL}}"
+							],
+							"path": [
+								"phones",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "0jk"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_API_URL",
+			"value": "http://localhost:3001/api/v1"
+		}
+	]
+}
