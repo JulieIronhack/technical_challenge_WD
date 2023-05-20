@@ -1,63 +1,45 @@
 .phone-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 16px;
 }
 
+.grid--big-columns {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 
 .phone-card {
-  flex: 1 0 200px;
-  margin: 10px;
-  padding: 10px;
+  overflow: hidden;
+  position: relative;
   background-color: #f2f2f2;
   border-radius: 5px;
-  transition: flex 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.phone-card.active {
-  flex: 2 0 400px;
-}
-
-
-@media (max-width: 600px) {
-  .phone-card {
-    flex: 1 0 100%;
-    margin: 5px 0; 
-  }
-  
-  .phone-card.active {
-    flex: 1 0 100%;
-  }
-
-}
 .phone-details {
-  margin: 10px; 
-  padding: 15px; 
+  margin: 30px;
+}
+.card--expanded {
+  grid-column: span 1;
+  grid-row: span 2;
 }
 
-
-
-.phone-card .phone-card-inner {
+.phone-card-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.phone-card .phone-image-container {
-  width: 80%; 
-  overflow: hidden;
-}
-
 .phone-card .phone-image {
   width: 100%;
   height: auto;
-  transition: max-width 0.3s ease;
+  transition: transform 0.8s;
   object-fit: cover;
 }
 
-.phone-card.active .phone-image {
-  max-width: 150px;
+.card--expanded .phone-image {
+  transform: scale(1.03);
 }
 
 .phone-card .phone-name {

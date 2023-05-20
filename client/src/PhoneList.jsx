@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
 import './PhoneList.css';
 import PhoneDetails from './PhoneDetails';
 
-const PhoneList = ({ phones, onPhoneSelect }) => {
+const PhoneList = ({ phones }) => {
   const [selectedPhoneIndex, setSelectedPhoneIndex] = useState(null);
   const imageRoutePrefix = './assets/images/';
 
@@ -16,11 +15,10 @@ const PhoneList = ({ phones, onPhoneSelect }) => {
   };
 
   return (
-    <div className="phone-list">
+    <div className={`phone-list ${selectedPhoneIndex !== null ? 'grid--big-columns' : ''}`}>
       {phones.map((phone, index) => (
         <div
-          className={`phone-card ${selectedPhoneIndex === index ? 'active' : ''}`}
-        //   style={{ order: index > selectedPhoneIndex && selectedPhoneIndex !== null ? -1 : 0 }}
+          className={`phone-card ${selectedPhoneIndex === index ? 'card--expanded' : ''}`}
           key={phone.id}
           onClick={() => handlePhoneClick(index)}
         >
