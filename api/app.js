@@ -7,6 +7,7 @@ const app = express();
 
 app.use(logger("dev"));
 
+app.use(express.json());
 const api = require("./config/routes.config");
 app.use("/api/v1", api);
 

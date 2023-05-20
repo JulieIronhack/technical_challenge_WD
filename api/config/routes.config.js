@@ -1,12 +1,9 @@
-const express = require("express");
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-router.get("/phones", (req, res) => {
-  res.send("Phone list");
-});
+const phonesController = require('../controllers/phones.controllers')
 
-router.get("/phones/:id", (req, res) => {
-  res.send("Phone detail");
-});
+router.get('/phones', phonesController.list)
+router.get('/phones/:id', phonesController.detail)
 
-module.exports = router;
+module.exports = router
