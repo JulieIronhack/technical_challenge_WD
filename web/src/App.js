@@ -6,10 +6,12 @@ import PhonePage from './pages/PhonePage';
 function App() {
   return (
     <>
+    <div className="flex flex-col items-center justify-center">
       <Routes>
         <Route path='/phones' element={<PhonesPage />} />
         <Route path='/phones/:phoneId' element={<PhonePage />} />
       </Routes>
+      </div>
     </>
   );
 }
