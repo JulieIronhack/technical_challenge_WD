@@ -3,6 +3,7 @@ const logger = require("morgan");
 
 const app = express();
 
+app.use(express.json());
 app.use(logger("dev"));
 
 app.use("/api/v1", require("./config/routes.config"));

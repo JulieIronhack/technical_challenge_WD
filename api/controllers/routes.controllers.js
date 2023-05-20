@@ -9,3 +9,16 @@ module.exports.listPhones = async (req, res, next) => {
     next(error);
   }
 };
+
+module.exports.detailPhone = async (req, res, next) => {
+  try {
+    const phones = await getPhones();
+    const phoneId = parseInt(req.params.id);
+
+    const phoneDetail = phones.find((phone) => phone.id === phoneId);
+
+    res.json(phoneDetail);
+  } catch (error) {
+    next(error);
+  }
+};
