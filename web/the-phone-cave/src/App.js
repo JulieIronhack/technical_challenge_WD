@@ -9,7 +9,10 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchPhones = async () => {
+    const fetchData = async () => {
+      // Simulate loading for 2 seconds
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
       try {
         const response = await axios.get('http://localhost:3001/phones');
         setPhones(response.data);
@@ -19,7 +22,7 @@ const App = () => {
       }
     };
 
-    fetchPhones();
+    fetchData();
   }, []);
 
   const handlePhoneClick = (phone) => {
