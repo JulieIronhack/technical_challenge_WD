@@ -1,22 +1,14 @@
 const phones = require('../../data/phones.json');
-const createError = require('http-errors');
 
-module.exports.list = (req, res, next) => {
-  if (phones) {
-    console.log('phones data ', phones);
-    res.json(phones);
-  } else {
-    next(createError(404, `Phones data not found`));
-  }
-};
+ module.exports.list = (req, res, next) => {
+      res.status(200).json(phones)
+ };
 
-module.exports.detail = (req, res, next) => {
-  const phoneId = req.params.id;
-  const phoneDetail = phones.find(phone => phone.id == phoneId);
-  if (phoneDetail) {
-    phoneDetail.imageFileName = `${process.env.API_URL}/assets/images/${phoneDetail.imageFileName}`;
-    res.json(phoneDetail);
-  } else {
-    next(createError(404, `Phone not found`));
-  }
-};
+ module.exports.detail = (req, res, next) => {
+   const phone = phones.filter((phone) => phone.id == req.params.id) 
+
+   if (!phone) {
+     return res.status(404).json({ message: 'Phone not found' })
+   }
+   res.status(200).json(phone)
+ }

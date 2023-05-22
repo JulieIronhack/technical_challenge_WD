@@ -10,12 +10,13 @@ const app = express();
 app.use(express.json());
 app.use(logger('dev'));
 
-const api = require('./config/routes.config');
-app.use('/api/v1', api);
 
 // Configure CORS
 const cors = require('./config/cors.config');
 app.use(cors);
+
+const api = require('./config/routes.config');
+app.use('/api/v1', api);
 
 // Configure public resources
 app.use(express.static(`${__dirname}/public`));
