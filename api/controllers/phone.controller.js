@@ -1,7 +1,7 @@
-const phones = require('../data/phones.json');
+const phones = require('../../data/phones.json');
 const createError = require('http-errors');
 
-dule.exports.list = (req, res, next) => {
+module.exports.list = (req, res, next) => {
   if (phones) {
     console.log('phones data ', phones);
     res.json(phones);

@@ -5,7 +5,6 @@ const logger = require('morgan');
 const createError = require('http-errors');
 
 // Load configuration
-require('./config/db.config');
 const app = express();
 
 app.use(express.json());
