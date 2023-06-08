@@ -6,65 +6,60 @@ import Card from "react-bootstrap/Card";
 
 
 function PhoneDetails() {
-  const [phoneSelected, setPhone] = useState([]);
+  const [phoneSelected, selectPhone] = useState([]);
   const { phoneId } = useParams();
   const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
-
 
 
   useEffect(() => {
     const storedToken = localStorage.getItem("authToken");
     axios
-      .get(`${API_URL}/phones/${phoneId.toString()}`, {
+      .get(`${API_URL}/phones/${phoneId}`, {
         headers: { Authorization: `Bearer ${storedToken}` },
       })
       .then((result) => {
-        console.log(result)
-        setPhone(result.data);
+
+        selectPhone(result.data);
       })
       .catch((err) => console.log("Error while retrieving specific phone:", err));
-  }, [phoneId]);
-
+  }, []);
 
 
   return (
-    phoneSelected.map((p) => {
-      <Card
-        className="phone border-0"
-        key={p.id}
-        style={{ width: "40rem" }}
-      >
-        {p.imageFileName.length === 0 ? (
-          <></>
-        ) : (
-          <img src={require(`../images/${p.imageFileName}`)} alt={p.name} style={{ width: "20rem" }} />
-        )}
+    <Card
+      className="phone border-0"
+      key={phoneSelected.id}
+      style={{ width: "40rem" }}
+    >
+      {phoneSelected.imageFileName === "" ? (
+        <></>
+      ) : (
+        <img src={require(`../images/${phoneSelected.imageFileName}`)} alt={phoneSelected.name} style={{ width: "20rem" }} />
+      )}
 
-        <Card.Title>{p.name}</Card.Title>
-        {p.description.length === 0 ? (
-          <></>
-        ) : (
-          <Card.Text>{p.description}</Card.Text>
-        )}
-        {p.manufacturer.length === 0 ? (
-          <></>
-        ) : (
-          <Card.Text>{p.manufacturer}</Card.Text>
-        )}
+      <Card.Title>{phoneSelected.name}</Card.Title>
+      {phoneSelected.description === "" ? (
+        <></>
+      ) : (
+        <Card.Text>{phoneSelected.description}</Card.Text>
+      )}
+      {phoneSelected.manufacturer === "" ? (
+        <></>
+      ) : (
+        <Card.Text>{phoneSelected.manufacturer}</Card.Text>
+      )}
 
-        {p.price === 0 ? (
-          <></>
-        ) : (
-          <Card.Footer>
-            <small className="text-muted">
-              {p.price} | {p.screen} | {p.processor} | {p.ram}
-            </small>
-          </Card.Footer>
+      {phoneSelected.price === 0 ? (
+        <></>
+      ) : (
+        <Card.Footer>
+          <small className="text-muted">
+            {phoneSelected.price} | {phoneSelected.screen} | {phoneSelected.processor} | {phoneSelected.ram}
+          </small>
+        </Card.Footer>
 
-        )}
-
-      </Card>
-    })
+      )}
+    </Card>
   );
 };
 

@@ -21,11 +21,10 @@ function PhoneList() {
                 headers: { Authorization: `Bearer ${storedToken}` },
             })
             .then((result) => {
-                console.log(result.data)
                 setPhones(result.data);
             })
             .catch((err) => console.log("Error while retrieving phones:", err));
-    }, []);
+    }, [API_URL]);
 
 
     return (
