@@ -52,9 +52,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Phones</h1>
+      <h1>Shop Phones</h1>
       <MyNavbar />
-      <div>
+      <div className="routes">
         <Routes>
           <Route path='/phones' element={< PhoneList />} />
           <Route path='/phones/:phoneId' element={< PhoneDetails />} />

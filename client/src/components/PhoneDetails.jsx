@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 
 
 function PhoneDetails() {
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5005";
   const [selectedPhone, selectPhone] = useState([]);
   const { phoneId } = useParams();
 
@@ -28,6 +27,17 @@ function PhoneDetails() {
       .catch((err) => console.log("Error while retrieving phones:", err));
   }, []);
 
+  const images = [
+    "IPhone_7.png",
+    "Galaxy_S7.png",
+    "Honor_10.png",
+    "P10_Lite.jpg",
+    "Nokia_7.1.jpg",
+    "ZenPhone_5.jpg",
+    "Xiaomi_MI_A2.jpeg",
+    "Moto_G6.png"
+  ]
+
 
   return (
 
@@ -36,11 +46,6 @@ function PhoneDetails() {
       key={selectedPhone.id}
       style={{ width: "40rem" }}
     >
-      {/* {selectedPhone.imageFileName === "" ? (
-        <></>
-      ) : (
-        <img src={`../images/${selectedPhone.imageFileName}`} alt={selectedPhone.name} />
-      )} */}
 
       <Card.Title>{selectedPhone.name}</Card.Title>
       {selectedPhone.description === "" ? (
@@ -63,7 +68,7 @@ function PhoneDetails() {
           </small>
         </Card.Footer>
       )}
-      <Link to={`http://localhost:3000/phones`}>Back</Link>
+      <Link to={`http://localhost:3000/phones`}>Back to Home</Link>
 
     </Card>
   );

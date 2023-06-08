@@ -53,8 +53,8 @@ function MyNavbar() {
     }
 
     return (
-        <Navbar bg="light" expand="lg">
-            <Container>
+        <Navbar bg="light" expand="lg" >
+            <Container className="nav-container">
                 <Link to={`/phones`}>Home</Link>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -63,9 +63,11 @@ function MyNavbar() {
                     <Nav className="me-auto">
                         {phones.map((eachPhone) => {
                             return (
+                                <div className="navbar-links">
                                 <Link to={`/phones/${eachPhone.id}`} key={eachPhone.id} onClick={handlePhoneSelect}>
                                     {eachPhone.name}
                                 </Link>
+                                </div>
                             );
                         })}
                     </Nav>
