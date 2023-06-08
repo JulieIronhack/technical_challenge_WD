@@ -17,7 +17,7 @@ function PhoneList() {
         const storedToken = localStorage.getItem("authToken");
 
         axios
-            .get(`${API_URL}/phones`, {
+            .get(`${API_URL}/phones/`, {
                 headers: { Authorization: `Bearer ${storedToken}` },
             })
             .then((result) => {
@@ -25,6 +25,8 @@ function PhoneList() {
             })
             .catch((err) => console.log("Error while retrieving phones:", err));
     }, [API_URL]);
+
+
 
 
     return (
@@ -36,19 +38,19 @@ function PhoneList() {
                     key={id}
                     style={{ width: "40rem" }}
                 >
-                    {imageFileName.length === 0 ? (
+                    {imageFileName === "" ? (
                         <></>
                     ) : (
                         <img src={require(`../images/${imageFileName}`)} alt={name} />
                     )}
 
                     <Card.Title>{name}</Card.Title>
-                    {description.length === 0 ? (
+                    {description === "" ? (
                         <></>
                     ) : (
                         <Card.Text>{description}</Card.Text>
                     )}
-                    {manufacturer.length === 0 ? (
+                    {manufacturer === "" ? (
                         <></>
                     ) : (
                         <Card.Text>{manufacturer}</Card.Text>
@@ -63,7 +65,7 @@ function PhoneList() {
                             </small>
                         </Card.Footer>
                     )}
-                    <Link to={`${API_URL}/phones/${id.toString()}`}>See more</Link>
+                    <Link to={`http://localhost:3000/phones/${id.toString()}`}>See more</Link>
 
                 </Card>
 
