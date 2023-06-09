@@ -4,7 +4,12 @@ const phones = require("../data/phones.json");
 
 // GET /api/phones - Returns the list of phones
 router.get("/phones", (req, res) => {
-  res.json(phones);
+  try {
+    res.json(phones);
+  } catch (error) {
+    console.error("Error reading phones data: ", error);
+    res.status(500).json({ message: "Internal server error" });
+  }
 });
 
 // GET /api/phones/:id - Returns the detail of a phone by id

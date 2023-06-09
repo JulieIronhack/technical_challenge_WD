@@ -13,21 +13,31 @@ const PhoneDetail = () => {
   const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
+    let isMounted = true;
+
     const fetchData = async () => {
       try {
         const phoneData = await getPhoneById(id);
-        setPhone(phoneData);
-        setLoading(false);
+        if (isMounted) {
+          setPhone(phoneData);
+          setLoading(false);
+        }
       } catch (error) {
         console.error("Error fetching data: ", error);
-        setLoading(false);
-        if (error.message === "Phone not found") {
-          setNotFound(true);
+        if (isMounted) {
+          setLoading(false);
+          if (error.message === "Phone not found") {
+            setNotFound(true);
+          }
         }
       }
     };
 
     fetchData();
+
+    return () => {
+      isMounted = false;
+    };
   }, [id]);
 
   if (loading) return <LoadingSpinner />;
