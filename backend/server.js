@@ -17,17 +17,4 @@ app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
 
-// router.get("/", async (req, res) => {
-//   try {
-//     const response = await axios.get("http://localhost:5173/phones");
-//     const phones = response.data;
-//     res.json(phones);
-//   } catch (error) {
-//     console.error(error);
-//     res
-//       .status(500)
-//       .json({ error: "An error occurred while fetching the data" });
-//   }
-// });
-
 module.exports = router;
