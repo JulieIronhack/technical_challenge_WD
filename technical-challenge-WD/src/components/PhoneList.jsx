@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import PhoneDetails from "./PhoneDetails";
 
 import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
@@ -9,7 +10,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import CircularProgress from "@mui/material/CircularProgress";
 
-const PhoneDetails = () => {
+const PhoneList = () => {
   const [phones, setPhones] = useState([]);
   const [phone, setPhone] = React.useState("");
   const [selectedPhone, setSelectedPhone] = useState(null);
@@ -77,19 +78,17 @@ const PhoneDetails = () => {
               </Select>
             </FormControl>
           </Box>
+          <br />
         </>
       )}
 
       {!isLoading && selectedPhone && (
-        <div>
-          <h3>Phone Details</h3>
-          <p>Name: {selectedPhone.name}</p>
-          <p>Manufacturer: {selectedPhone.manufacturer}</p>
-          <p>Description: {selectedPhone.description}</p>
+        <div className="pt-3">
+          <PhoneDetails selectedPhone={selectedPhone} />
         </div>
       )}
     </div>
   );
 };
 
-export default PhoneDetails;
+export default PhoneList;
