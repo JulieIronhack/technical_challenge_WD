@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { Schema } = mongoose;
 
 const phoneSchema = new Schema({
   id: {
@@ -16,5 +17,7 @@ const phoneSchema = new Schema({
   processor: String,
   ram: Number,
 });
+
+const Phone = mongoose.model("Phone", phoneSchema);
 
 module.exports = Phone;
