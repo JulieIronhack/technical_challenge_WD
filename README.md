@@ -2,7 +2,7 @@
 
 This exercise was a simulated tech challenge completed during the Ironhack CareerWeek.
 
-<img src="phonecrave_preview.png" alt="App preview">
+<img src="technical-challenge-WD/phonecave_preview.png" alt="App preview">
 
 ## Technologies used
 
